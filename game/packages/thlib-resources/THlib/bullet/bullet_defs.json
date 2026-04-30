@@ -1,0 +1,1054 @@
+{
+  "defs": {
+    "ball_small": {
+      "type": "static",
+      "collision": {
+        "a": 2,
+        "b": 2,
+        "is_rect": false
+      },
+      "offset": {
+        "x": 0,
+        "y": 0
+      },
+      "scale_x": 0.5,
+      "scale_y": 0.5,
+      "colors": {
+        "1": "ball_small1",
+        "2": "ball_small2",
+        "3": "ball_small3",
+        "4": "ball_small4",
+        "5": "ball_small5",
+        "6": "ball_small6",
+        "7": "ball_small7",
+        "8": "ball_small8",
+        "9": "ball_small9",
+        "10": "ball_small10",
+        "11": "ball_small11",
+        "12": "ball_small12",
+        "13": "ball_small13",
+        "14": "ball_small14",
+        "15": "ball_small15",
+        "16": "ball_small16"
+      }
+    },
+    "mildew": {
+      "type": "static",
+      "collision": {
+        "a": 2,
+        "b": 2,
+        "is_rect": false
+      },
+      "offset": {
+        "x": 0,
+        "y": 0
+      },
+      "scale_x": 0.5,
+      "scale_y": 0.5,
+      "colors": {
+        "1": "mildew1",
+        "2": "mildew2",
+        "3": "mildew3",
+        "4": "mildew4",
+        "5": "mildew5",
+        "6": "mildew6",
+        "7": "mildew7",
+        "8": "mildew8",
+        "9": "mildew9",
+        "10": "mildew10",
+        "11": "mildew11",
+        "12": "mildew12",
+        "13": "mildew13",
+        "14": "mildew14",
+        "15": "mildew15",
+        "16": "mildew16"
+      }
+    },
+    "grain_a": {
+      "type": "static",
+      "collision": {
+        "a": 2.5,
+        "b": 2.5,
+        "is_rect": false
+      },
+      "offset": {
+        "x": 0,
+        "y": 0
+      },
+      "scale_x": 0.5,
+      "scale_y": 0.5,
+      "colors": {
+        "1": "grain_a1",
+        "2": "grain_a2",
+        "3": "grain_a3",
+        "4": "grain_a4",
+        "5": "grain_a5",
+        "6": "grain_a6",
+        "7": "grain_a7",
+        "8": "grain_a8",
+        "9": "grain_a9",
+        "10": "grain_a10",
+        "11": "grain_a11",
+        "12": "grain_a12",
+        "13": "grain_a13",
+        "14": "grain_a14",
+        "15": "grain_a15",
+        "16": "grain_a16"
+      }
+    },
+    "grain_b": {
+      "type": "static",
+      "collision": {
+        "a": 2.5,
+        "b": 2.5,
+        "is_rect": false
+      },
+      "offset": {
+        "x": 0,
+        "y": 0
+      },
+      "scale_x": 0.5,
+      "scale_y": 0.5,
+      "colors": {
+        "1": "ball_mid1",
+        "2": "ball_mid2",
+        "3": "ball_mid3",
+        "4": "ball_mid4",
+        "5": "ball_mid5",
+        "6": "ball_mid6",
+        "7": "ball_mid7",
+        "8": "ball_mid8",
+        "9": "ball_mid9",
+        "10": "ball_mid10",
+        "11": "ball_mid11",
+        "12": "ball_mid12",
+        "13": "ball_mid13",
+        "14": "ball_mid14",
+        "15": "ball_mid15",
+        "16": "ball_mid16"
+      }
+    },
+    "grain_c": {
+      "type": "static",
+      "collision": {
+        "a": 2.5,
+        "b": 2.5,
+        "is_rect": false
+      },
+      "offset": {
+        "x": 0,
+        "y": 0
+      },
+      "scale_x": 0.5,
+      "scale_y": 0.5,
+      "colors": {
+        "1": "grain_c1",
+        "2": "grain_c2",
+        "3": "grain_c3",
+        "4": "grain_c4",
+        "5": "grain_c5",
+        "6": "grain_c6",
+        "7": "grain_c7",
+        "8": "grain_c8",
+        "9": "grain_c9",
+        "10": "grain_c10",
+        "11": "grain_c11",
+        "12": "grain_c12",
+        "13": "grain_c13",
+        "14": "grain_c14",
+        "15": "grain_c15",
+        "16": "grain_c16"
+      }
+    },
+    "arrow_small": {
+      "type": "static",
+      "collision": {
+        "a": 2.5,
+        "b": 2.5,
+        "is_rect": false
+      },
+      "offset": {
+        "x": 0,
+        "y": 0
+      },
+      "scale_x": 0.5,
+      "scale_y": 0.5,
+      "colors": {
+        "1": "arrow_small1",
+        "2": "arrow_small2",
+        "3": "arrow_small3",
+        "4": "arrow_small4",
+        "5": "arrow_small5",
+        "6": "arrow_small6",
+        "7": "arrow_small7",
+        "8": "arrow_small8",
+        "9": "arrow_small9",
+        "10": "arrow_small10",
+        "11": "arrow_small11",
+        "12": "arrow_small12",
+        "13": "arrow_small13",
+        "14": "arrow_small14",
+        "15": "arrow_small15",
+        "16": "arrow_small16"
+      }
+    },
+    "money": {
+      "type": "static",
+      "collision": {
+        "a": 4,
+        "b": 4,
+        "is_rect": false
+      },
+      "offset": {
+        "x": 0,
+        "y": 0
+      },
+      "scale_x": 0.5,
+      "scale_y": 0.5,
+      "colors": {
+        "1": "money1",
+        "2": "money2",
+        "3": "money3",
+        "4": "money4",
+        "5": "money5",
+        "6": "money6",
+        "7": "money7",
+        "8": "money8"
+      }
+    },
+    "gun_bullet": {
+      "type": "static",
+      "collision": {
+        "a": 2.5,
+        "b": 2.5,
+        "is_rect": false
+      },
+      "offset": {
+        "x": 0,
+        "y": 0
+      },
+      "scale_x": 0.5,
+      "scale_y": 0.5,
+      "colors": {
+        "1": "gun_bullet1",
+        "2": "gun_bullet2",
+        "3": "gun_bullet3",
+        "4": "gun_bullet4",
+        "5": "gun_bullet5",
+        "6": "gun_bullet6",
+        "7": "gun_bullet7",
+        "8": "gun_bullet8",
+        "9": "gun_bullet9",
+        "10": "gun_bullet10",
+        "11": "gun_bullet11",
+        "12": "gun_bullet12",
+        "13": "gun_bullet13",
+        "14": "gun_bullet14",
+        "15": "gun_bullet15",
+        "16": "gun_bullet16"
+      }
+    },
+    "silence": {
+      "type": "static",
+      "collision": {
+        "a": 4.5,
+        "b": 4.5,
+        "is_rect": false
+      },
+      "offset": {
+        "x": 0,
+        "y": 0
+      },
+      "scale_x": 0.5,
+      "scale_y": 0.5,
+      "colors": {
+        "1": "silence1",
+        "2": "silence2",
+        "3": "silence3",
+        "4": "silence4",
+        "5": "silence5",
+        "6": "silence6",
+        "7": "silence7",
+        "8": "silence8",
+        "9": "silence9",
+        "10": "silence10",
+        "11": "silence11",
+        "12": "silence12",
+        "13": "silence13",
+        "14": "silence14",
+        "15": "silence15",
+        "16": "silence16"
+      }
+    },
+    "kite": {
+      "type": "static",
+      "collision": {
+        "a": 2.5,
+        "b": 2.5,
+        "is_rect": false
+      },
+      "offset": {
+        "x": 0,
+        "y": 0
+      },
+      "scale_x": 0.5,
+      "scale_y": 0.5,
+      "colors": {
+        "1": "kite1",
+        "2": "kite2",
+        "3": "kite3",
+        "4": "kite4",
+        "5": "kite5",
+        "6": "kite6",
+        "7": "kite7",
+        "8": "kite8",
+        "9": "kite9",
+        "10": "kite10",
+        "11": "kite11",
+        "12": "kite12",
+        "13": "kite13",
+        "14": "kite14",
+        "15": "kite15",
+        "16": "kite16"
+      }
+    },
+    "arrow_mid": {
+      "type": "static",
+      "collision": {
+        "a": 3.5,
+        "b": 3.5,
+        "is_rect": false
+      },
+      "offset": {
+        "x": 0,
+        "y": 0
+      },
+      "scale_x": 0.5,
+      "scale_y": 0.5,
+      "colors": {
+        "1": "arrow_mid1",
+        "2": "arrow_mid2",
+        "3": "arrow_mid3",
+        "4": "arrow_mid4",
+        "5": "arrow_mid5",
+        "6": "arrow_mid6",
+        "7": "arrow_mid7",
+        "8": "arrow_mid8",
+        "9": "arrow_mid9",
+        "10": "arrow_mid10",
+        "11": "arrow_mid11",
+        "12": "arrow_mid12",
+        "13": "arrow_mid13",
+        "14": "arrow_mid14",
+        "15": "arrow_mid15",
+        "16": "arrow_mid16"
+      }
+    },
+    "square": {
+      "type": "static",
+      "collision": {
+        "a": 3,
+        "b": 3,
+        "is_rect": false
+      },
+      "offset": {
+        "x": 0,
+        "y": 0
+      },
+      "scale_x": 0.5,
+      "scale_y": 0.5,
+      "colors": {
+        "1": "square1",
+        "2": "square2",
+        "3": "square3",
+        "4": "square4",
+        "5": "square5",
+        "6": "square6",
+        "7": "square7",
+        "8": "square8",
+        "9": "square9",
+        "10": "square10",
+        "11": "square11",
+        "12": "square12",
+        "13": "square13",
+        "14": "square14",
+        "15": "square15",
+        "16": "square16"
+      }
+    },
+    "arrow_big": {
+      "type": "static",
+      "collision": {
+        "a": 2.5,
+        "b": 2.5,
+        "is_rect": false
+      },
+      "offset": {
+        "x": 0,
+        "y": 0
+      },
+      "scale_x": 0.5,
+      "scale_y": 0.5,
+      "colors": {
+        "1": "arrow_big1",
+        "2": "arrow_big2",
+        "3": "arrow_big3",
+        "4": "arrow_big4",
+        "5": "arrow_big5",
+        "6": "arrow_big6",
+        "7": "arrow_big7",
+        "8": "arrow_big8",
+        "9": "arrow_big9",
+        "10": "arrow_big10",
+        "11": "arrow_big11",
+        "12": "arrow_big12",
+        "13": "arrow_big13",
+        "14": "arrow_big14",
+        "15": "arrow_big15",
+        "16": "arrow_big16"
+      }
+    },
+    "ball_mid": {
+      "type": "static",
+      "collision": {
+        "a": 4,
+        "b": 4,
+        "is_rect": false
+      },
+      "offset": {
+        "x": 0,
+        "y": 0
+      },
+      "scale_x": 0.5,
+      "scale_y": 0.5,
+      "colors": {
+        "1": "ball_mid1",
+        "2": "ball_mid2",
+        "3": "ball_mid3",
+        "4": "ball_mid4",
+        "5": "ball_mid5",
+        "6": "ball_mid6",
+        "7": "ball_mid7",
+        "8": "ball_mid8",
+        "9": "ball_mid9",
+        "10": "ball_mid10",
+        "11": "ball_mid11",
+        "12": "ball_mid12",
+        "13": "ball_mid13",
+        "14": "ball_mid14",
+        "15": "ball_mid15",
+        "16": "ball_mid16"
+      }
+    },
+    "ball_mid_c": {
+      "type": "static",
+      "collision": {
+        "a": 4,
+        "b": 4,
+        "is_rect": false
+      },
+      "offset": {
+        "x": 0,
+        "y": 0
+      },
+      "scale_x": 0.5,
+      "scale_y": 0.5,
+      "colors": {
+        "1": "ball_mid_c1",
+        "2": "ball_mid_c2",
+        "3": "ball_mid_c3",
+        "4": "ball_mid_c4",
+        "5": "ball_mid_c5",
+        "6": "ball_mid_c6",
+        "7": "ball_mid_c7",
+        "8": "ball_mid_c8",
+        "9": "ball_mid_c9",
+        "10": "ball_mid_c10",
+        "11": "ball_mid_c11",
+        "12": "ball_mid_c12",
+        "13": "ball_mid_c13",
+        "14": "ball_mid_c14",
+        "15": "ball_mid_c15",
+        "16": "ball_mid_c16"
+      }
+    },
+    "knife": {
+      "type": "static",
+      "collision": {
+        "a": 4,
+        "b": 4,
+        "is_rect": false
+      },
+      "offset": {
+        "x": 0,
+        "y": 0
+      },
+      "scale_x": 0.5,
+      "scale_y": 0.5,
+      "colors": {
+        "1": "knife1",
+        "2": "knife2",
+        "3": "knife3",
+        "4": "knife4",
+        "5": "knife5",
+        "6": "knife6",
+        "7": "knife7",
+        "8": "knife8",
+        "9": "knife9",
+        "10": "knife10",
+        "11": "knife11",
+        "12": "knife12",
+        "13": "knife13",
+        "14": "knife14",
+        "15": "knife15",
+        "16": "knife16"
+      }
+    },
+    "star_small": {
+      "type": "static",
+      "collision": {
+        "a": 3,
+        "b": 3,
+        "is_rect": false
+      },
+      "offset": {
+        "x": 0,
+        "y": 0
+      },
+      "scale_x": 0.5,
+      "scale_y": 0.5,
+      "colors": {
+        "1": "star_small1",
+        "2": "star_small2",
+        "3": "star_small3",
+        "4": "star_small4",
+        "5": "star_small5",
+        "6": "star_small6",
+        "7": "star_small7",
+        "8": "star_small8",
+        "9": "star_small9",
+        "10": "star_small10",
+        "11": "star_small11",
+        "12": "star_small12",
+        "13": "star_small13",
+        "14": "star_small14",
+        "15": "star_small15",
+        "16": "star_small16"
+      }
+    },
+    "ellipse": {
+      "type": "static",
+      "collision": {
+        "a": 3,
+        "b": 3,
+        "is_rect": false
+      },
+      "offset": {
+        "x": 0,
+        "y": 0
+      },
+      "scale_x": 0.5,
+      "scale_y": 0.5,
+      "colors": {
+        "1": "ellipse1",
+        "2": "ellipse2",
+        "3": "ellipse3",
+        "4": "ellipse4",
+        "5": "ellipse5",
+        "6": "ellipse6",
+        "7": "ellipse7",
+        "8": "ellipse8",
+        "9": "ellipse9",
+        "10": "ellipse10",
+        "11": "ellipse11",
+        "12": "ellipse12",
+        "13": "ellipse13",
+        "14": "ellipse14",
+        "15": "ellipse15",
+        "16": "ellipse16"
+      }
+    },
+    "water_drop": {
+      "type": "ani",
+      "interval": 6,
+      "collision": {
+        "a": 4,
+        "b": 4,
+        "is_rect": false
+      },
+      "offset": {
+        "x": 0,
+        "y": 0
+      },
+      "scale_x": 0.5,
+      "scale_y": 0.5,
+      "colors": {
+        "1": [
+          "water_drop1_1",
+          "water_drop1_2",
+          "water_drop1_3"
+        ],
+        "2": [
+          "water_drop2_1",
+          "water_drop2_2",
+          "water_drop2_3"
+        ],
+        "3": [
+          "water_drop3_1",
+          "water_drop3_2",
+          "water_drop3_3"
+        ],
+        "4": [
+          "water_drop4_1",
+          "water_drop4_2",
+          "water_drop4_3"
+        ],
+        "5": [
+          "water_drop5_1",
+          "water_drop5_2",
+          "water_drop5_3"
+        ],
+        "6": [
+          "water_drop6_1",
+          "water_drop6_2",
+          "water_drop6_3"
+        ],
+        "7": [
+          "water_drop7_1",
+          "water_drop7_2",
+          "water_drop7_3"
+        ],
+        "8": [
+          "water_drop8_1",
+          "water_drop8_2",
+          "water_drop8_3"
+        ],
+        "9": [
+          "water_drop9_1",
+          "water_drop9_2",
+          "water_drop9_3"
+        ],
+        "10": [
+          "water_drop10_1",
+          "water_drop10_2",
+          "water_drop10_3"
+        ],
+        "11": [
+          "water_drop11_1",
+          "water_drop11_2",
+          "water_drop11_3"
+        ],
+        "12": [
+          "water_drop12_1",
+          "water_drop12_2",
+          "water_drop12_3"
+        ],
+        "13": [
+          "water_drop13_1",
+          "water_drop13_2",
+          "water_drop13_3"
+        ],
+        "14": [
+          "water_drop14_1",
+          "water_drop14_2",
+          "water_drop14_3"
+        ],
+        "15": [
+          "water_drop15_1",
+          "water_drop15_2",
+          "water_drop15_3"
+        ],
+        "16": [
+          "water_drop16_1",
+          "water_drop16_2",
+          "water_drop16_3"
+        ]
+      }
+    },
+    "butterfly": {
+      "type": "static",
+      "collision": {
+        "a": 4,
+        "b": 4,
+        "is_rect": false
+      },
+      "offset": {
+        "x": 0,
+        "y": 0
+      },
+      "scale_x": 0.5,
+      "scale_y": 0.5,
+      "colors": {
+        "1": "butterfly1",
+        "2": "butterfly2",
+        "3": "butterfly3",
+        "4": "butterfly4",
+        "5": "butterfly5",
+        "6": "butterfly6",
+        "7": "butterfly7",
+        "8": "butterfly8",
+        "9": "butterfly9",
+        "10": "butterfly10",
+        "11": "butterfly11",
+        "12": "butterfly12",
+        "13": "butterfly13",
+        "14": "butterfly14",
+        "15": "butterfly15",
+        "16": "butterfly16"
+      }
+    },
+    "ball_big": {
+      "type": "static",
+      "collision": {
+        "a": 8,
+        "b": 8,
+        "is_rect": false
+      },
+      "offset": {
+        "x": 0,
+        "y": 0
+      },
+      "scale_x": 0.5,
+      "scale_y": 0.5,
+      "colors": {
+        "1": "ball_big1",
+        "2": "ball_big2",
+        "3": "ball_big3",
+        "4": "ball_big4",
+        "5": "ball_big5",
+        "6": "ball_big6",
+        "7": "ball_big7",
+        "8": "ball_big8",
+        "9": "ball_big9",
+        "10": "ball_big10",
+        "11": "ball_big11",
+        "12": "ball_big12",
+        "13": "ball_big13",
+        "14": "ball_big14",
+        "15": "ball_big15",
+        "16": "ball_big16"
+      }
+    },
+    "heart": {
+      "type": "static",
+      "collision": {
+        "a": 9,
+        "b": 9,
+        "is_rect": false
+      },
+      "offset": {
+        "x": 0,
+        "y": 0
+      },
+      "scale_x": 0.5,
+      "scale_y": 0.5,
+      "colors": {
+        "1": "heart1",
+        "2": "heart2",
+        "3": "heart3",
+        "4": "heart4",
+        "5": "heart5",
+        "6": "heart6",
+        "7": "heart7",
+        "8": "heart8",
+        "9": "heart9",
+        "10": "heart10",
+        "11": "heart11",
+        "12": "heart12",
+        "13": "heart13",
+        "14": "heart14",
+        "15": "heart15",
+        "16": "heart16"
+      }
+    },
+    "knife_b": {
+      "type": "static",
+      "collision": {
+        "a": 3.5,
+        "b": 3.5,
+        "is_rect": false
+      },
+      "offset": {
+        "x": 0,
+        "y": 0
+      },
+      "scale_x": 0.5,
+      "scale_y": 0.5,
+      "colors": {
+        "1": "knife_b1",
+        "2": "knife_b2",
+        "3": "knife_b3",
+        "4": "knife_b4",
+        "5": "knife_b5",
+        "6": "knife_b6",
+        "7": "knife_b7",
+        "8": "knife_b8",
+        "9": "knife_b9",
+        "10": "knife_b10",
+        "11": "knife_b11",
+        "12": "knife_b12",
+        "13": "knife_b13",
+        "14": "knife_b14",
+        "15": "knife_b15",
+        "16": "knife_b16"
+      }
+    },
+    "preimg": {
+      "type": "static",
+      "collision": {
+        "a": 4,
+        "b": 4,
+        "is_rect": false
+      },
+      "offset": {
+        "x": 0,
+        "y": 0
+      },
+      "scale_x": 0.5,
+      "scale_y": 0.5,
+      "colors": {
+        "1": "preimg1",
+        "2": "preimg2",
+        "3": "preimg3",
+        "4": "preimg4",
+        "5": "preimg5",
+        "6": "preimg6",
+        "7": "preimg7",
+        "8": "preimg8",
+        "9": "preimg9",
+        "10": "preimg10",
+        "11": "preimg11",
+        "12": "preimg12",
+        "13": "preimg13",
+        "14": "preimg14",
+        "15": "preimg15",
+        "16": "preimg16"
+      }
+    },
+    "star_big": {
+      "type": "static",
+      "collision": {
+        "a": 5.5,
+        "b": 5.5,
+        "is_rect": false
+      },
+      "offset": {
+        "x": 0,
+        "y": 0
+      },
+      "scale_x": 0.5,
+      "scale_y": 0.5,
+      "colors": {
+        "1": "star_big1",
+        "2": "star_big2",
+        "3": "star_big3",
+        "4": "star_big4",
+        "5": "star_big5",
+        "6": "star_big6",
+        "7": "star_big7",
+        "8": "star_big8",
+        "9": "star_big9",
+        "10": "star_big10",
+        "11": "star_big11",
+        "12": "star_big12",
+        "13": "star_big13",
+        "14": "star_big14",
+        "15": "star_big15",
+        "16": "star_big16"
+      }
+    },
+    "bubble": {
+      "type": "static",
+      "collision": {
+        "a": 4,
+        "b": 4,
+        "is_rect": false
+      },
+      "offset": {
+        "x": 0,
+        "y": 0
+      },
+      "scale_x": 0.5,
+      "scale_y": 0.5,
+      "colors": {
+        "1": "bubble1",
+        "2": "bubble2",
+        "3": "bubble3",
+        "4": "bubble4",
+        "5": "bubble5",
+        "6": "bubble6",
+        "7": "bubble7",
+        "8": "bubble8",
+        "9": "bubble9",
+        "10": "bubble10",
+        "11": "bubble11",
+        "12": "bubble12",
+        "13": "bubble13",
+        "14": "bubble14",
+        "15": "bubble15",
+        "16": "bubble16"
+      }
+    },
+    "music": {
+      "type": "ani",
+      "interval": 6,
+      "collision": {
+        "a": 4,
+        "b": 4,
+        "is_rect": false
+      },
+      "offset": {
+        "x": 0,
+        "y": 0
+      },
+      "scale_x": 0.5,
+      "scale_y": 0.5,
+      "colors": {
+        "1": [
+          "music1_1",
+          "music1_2",
+          "music1_3"
+        ],
+        "2": [
+          "music2_1",
+          "music2_2",
+          "music2_3"
+        ],
+        "3": [
+          "music3_1",
+          "music3_2",
+          "music3_3"
+        ],
+        "4": [
+          "music4_1",
+          "music4_2",
+          "music4_3"
+        ],
+        "5": [
+          "music5_1",
+          "music5_2",
+          "music5_3"
+        ],
+        "6": [
+          "music6_1",
+          "music6_2",
+          "music6_3"
+        ],
+        "7": [
+          "music7_1",
+          "music7_2",
+          "music7_3"
+        ],
+        "8": [
+          "music8_1",
+          "music8_2",
+          "music8_3"
+        ],
+        "9": [
+          "music9_1",
+          "music9_2",
+          "music9_3"
+        ],
+        "10": [
+          "music10_1",
+          "music10_2",
+          "music10_3"
+        ],
+        "11": [
+          "music11_1",
+          "music11_2",
+          "music11_3"
+        ],
+        "12": [
+          "music12_1",
+          "music12_2",
+          "music12_3"
+        ],
+        "13": [
+          "music13_1",
+          "music13_2",
+          "music13_3"
+        ],
+        "14": [
+          "music14_1",
+          "music14_2",
+          "music14_3"
+        ],
+        "15": [
+          "music15_1",
+          "music15_2",
+          "music15_3"
+        ],
+        "16": [
+          "music16_1",
+          "music16_2",
+          "music16_3"
+        ]
+      }
+    },
+    "ball_huge": {
+      "type": "static",
+      "collision": {
+        "a": 13.5,
+        "b": 13.5,
+        "is_rect": false
+      },
+      "offset": {
+        "x": 0,
+        "y": 0
+      },
+      "scale_x": 0.5,
+      "scale_y": 0.5,
+      "colors": {
+        "1": "ball_huge1",
+        "2": "ball_huge2",
+        "3": "ball_huge3",
+        "4": "ball_huge4",
+        "5": "ball_huge5",
+        "6": "ball_huge6",
+        "7": "ball_huge7",
+        "8": "ball_huge8",
+        "9": "ball_huge9",
+        "10": "ball_huge10",
+        "11": "ball_huge11",
+        "12": "ball_huge12",
+        "13": "ball_huge13",
+        "14": "ball_huge14",
+        "15": "ball_huge15",
+        "16": "ball_huge16"
+      }
+    },
+    "ball_light": {
+      "type": "static",
+      "collision": {
+        "a": 11.5,
+        "b": 11.5,
+        "is_rect": false
+      },
+      "offset": {
+        "x": 0,
+        "y": 0
+      },
+      "scale_x": 0.5,
+      "scale_y": 0.5,
+      "colors": {
+        "1": "ball_light1",
+        "2": "ball_light2",
+        "3": "ball_light3",
+        "4": "ball_light4",
+        "5": "ball_light5",
+        "6": "ball_light6",
+        "7": "ball_light7",
+        "8": "ball_light8",
+        "9": "ball_light9",
+        "10": "ball_light10",
+        "11": "ball_light11",
+        "12": "ball_light12",
+        "13": "ball_light13",
+        "14": "ball_light14",
+        "15": "ball_light15",
+        "16": "ball_light16"
+      }
+    }
+  }
+}
