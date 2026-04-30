@@ -1,0 +1,9 @@
+game/userdata/
+game/config.json
+game/d3dcompiler_47.dll
+game/engine.log
+game/launch
+game/LuaSTGSub.exe
+game/xaudio2_9redist.dll
+game/mod/
+game/plugins/plugins.json
