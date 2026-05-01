@@ -320,7 +320,7 @@
         "is_rect": false
       },
       "offset": {
-        "x": 0,
+        "x": 16.0,
         "y": 0
       },
       "scale_x": 0.5,
@@ -513,7 +513,7 @@
       },
       "offset": {
         "x": 0,
-        "y": 0
+        "y": -2.0
       },
       "scale_x": 0.5,
       "scale_y": 0.5,
@@ -898,7 +898,7 @@
         "is_rect": false
       },
       "offset": {
-        "x": 0,
+        "x": 16.0,
         "y": 0
       },
       "scale_x": 0.5,
