@@ -56,7 +56,7 @@ if __name__ == "__main__":
         offset={"x": 0, "y": 0},
         scale_x=0.5,
         scale_y=0.5,
-        colors={str(i): f"ball_small{i}" for i in range(1, 17)}
+        colors={str(i): f"ball_small_{i}" for i in range(1, 17)}
     )
     # 黑点弹
     generator.add_bullet(
@@ -65,7 +65,7 @@ if __name__ == "__main__":
         offset={"x": 0, "y": 0},
         scale_x=0.5,
         scale_y=0.5,
-        colors={str(i): f"mildew{i}" for i in range(1, 17)}
+        colors={str(i): f"mildew_{i}" for i in range(1, 17)}
     )
     # 米弹
     generator.add_bullet(
@@ -74,7 +74,7 @@ if __name__ == "__main__":
         offset={"x": 0, "y": 0},
         scale_x=0.5,
         scale_y=0.5,
-        colors={str(i): f"grain_a{i}" for i in range(1, 17)}
+        colors={str(i): f"grain_a_{i}" for i in range(1, 17)}
     )
     # 棱弹
     generator.add_bullet(
@@ -83,7 +83,7 @@ if __name__ == "__main__":
         offset={"x": 0, "y": 0},
         scale_x=0.5,
         scale_y=0.5,
-        colors={str(i): f"ball_mid{i}" for i in range(1, 17)}
+        colors={str(i): f"ball_mid_{i}" for i in range(1, 17)}
     )
     # 黑米弹
     generator.add_bullet(
@@ -92,7 +92,7 @@ if __name__ == "__main__":
         offset={"x": 0, "y": 0},
         scale_x=0.5,
         scale_y=0.5,
-        colors={str(i): f"grain_c{i}" for i in range(1, 17)}
+        colors={str(i): f"grain_c_{i}" for i in range(1, 17)}
     )
     # 苦无弹
     generator.add_bullet(
@@ -101,7 +101,7 @@ if __name__ == "__main__":
         offset={"x": 0, "y": 0},
         scale_x=0.5,
         scale_y=0.5,
-        colors={str(i): f"arrow_small{i}" for i in range(1, 17)}
+        colors={str(i): f"arrow_small_{i}" for i in range(1, 17)}
     )
     # 钱弹
     generator.add_bullet(
@@ -110,7 +110,7 @@ if __name__ == "__main__":
         offset={"x": 0, "y": 0},
         scale_x=0.5,
         scale_y=0.5,
-        colors={str(i): f"money{i}" for i in range(1, 9)}
+        colors={str(i): f"money_{i}" for i in range(1, 9)}
     )
     # 统弹
     generator.add_bullet(
@@ -119,7 +119,7 @@ if __name__ == "__main__":
         offset={"x": 0, "y": 0},
         scale_x=0.5,
         scale_y=0.5,
-        colors={str(i): f"gun_bullet{i}" for i in range(1, 17)}
+        colors={str(i): f"gun_bullet_{i}" for i in range(1, 17)}
     )
     # 休止符
     generator.add_bullet(
@@ -128,7 +128,7 @@ if __name__ == "__main__":
         offset={"x": 0, "y": 0},
         scale_x=0.5,
         scale_y=0.5,
-        colors={str(i): f"silence{i}" for i in range(1, 17)}
+        colors={str(i): f"silence_{i}" for i in range(1, 17)}
     )
     # 滴弹
     generator.add_bullet(
@@ -137,7 +137,7 @@ if __name__ == "__main__":
         offset={"x": 0, "y": 0},
         scale_x=0.5,
         scale_y=0.5,
-        colors={str(i): f"kite{i}" for i in range(1, 17)}
+        colors={str(i): f"kite_{i}" for i in range(1, 17)}
     )
     # 箭弹
     generator.add_bullet(
@@ -146,7 +146,7 @@ if __name__ == "__main__":
         offset={"x": 0, "y": 0},
         scale_x=0.5,
         scale_y=0.5,
-        colors={str(i): f"arrow_mid{i}" for i in range(1, 17)}
+        colors={str(i): f"arrow_mid_{i}" for i in range(1, 17)}
     )
     # 箭弹
     generator.add_bullet(
@@ -155,7 +155,7 @@ if __name__ == "__main__":
         offset={"x": 0, "y": 0},
         scale_x=0.5,
         scale_y=0.5,
-        colors={str(i): f"arrow_mid{i}" for i in range(1, 17)}
+        colors={str(i): f"arrow_mid_{i}" for i in range(1, 17)}
     )
     # 札弹
     generator.add_bullet(
@@ -164,7 +164,7 @@ if __name__ == "__main__":
         offset={"x": 0, "y": 0},
         scale_x=0.5,
         scale_y=0.5,
-        colors={str(i): f"square{i}" for i in range(1, 17)}
+        colors={str(i): f"square_{i}" for i in range(1, 17)}
     )
     # 鳞弹
     generator.add_bullet(
@@ -173,7 +173,7 @@ if __name__ == "__main__":
         offset={"x": 0, "y": 0},
         scale_x=0.5,
         scale_y=0.5,
-        colors={str(i): f"arrow_big{i}" for i in range(1, 17)}
+        colors={str(i): f"arrow_big_{i}" for i in range(1, 17)}
     )
     # 小玉
     generator.add_bullet(
@@ -191,7 +191,7 @@ if __name__ == "__main__":
         offset={"x": 0, "y": 0},
         scale_x=0.5,
         scale_y=0.5,
-        colors={str(i): f"ball_mid_c{i}" for i in range(1, 17)}
+        colors={str(i): f"ball_mid_c_{i}" for i in range(1, 17)}
     )
     # 刀弹
     generator.add_bullet(
@@ -200,7 +200,7 @@ if __name__ == "__main__":
         offset={"x": 0, "y": 0},
         scale_x=0.5,
         scale_y=0.5,
-        colors={str(i): f"knife{i}" for i in range(1, 17)}
+        colors={str(i): f"knife_{i}" for i in range(1, 17)}
     )
     # 刀弹
     generator.add_bullet(
@@ -209,7 +209,7 @@ if __name__ == "__main__":
         offset={"x": 0, "y": 0},
         scale_x=0.5,
         scale_y=0.5,
-        colors={str(i): f"knife{i}" for i in range(1, 17)}
+        colors={str(i): f"knife_{i}" for i in range(1, 17)}
     )
     # 小星弹
     generator.add_bullet(
@@ -218,7 +218,7 @@ if __name__ == "__main__":
         offset={"x": 0, "y": 0},
         scale_x=0.5,
         scale_y=0.5,
-        colors={str(i): f"star_small{i}" for i in range(1, 17)}
+        colors={str(i): f"star_small_{i}" for i in range(1, 17)}
     )
     # 椭弹
     generator.add_bullet(
@@ -227,7 +227,7 @@ if __name__ == "__main__":
         offset={"x": 0, "y": 0},
         scale_x=0.5,
         scale_y=0.5,
-        colors={str(i): f"ellipse{i}" for i in range(1, 17)}
+        colors={str(i): f"ellipse_{i}" for i in range(1, 17)}
     )
     # 椭弹
     generator.add_bullet(
@@ -236,7 +236,7 @@ if __name__ == "__main__":
         offset={"x": 0, "y": 0},
         scale_x=0.5,
         scale_y=0.5,
-        colors={str(i): f"ellipse{i}" for i in range(1, 17)}
+        colors={str(i): f"ellipse_{i}" for i in range(1, 17)}
     )
     # 火弹
     generator.add_bullet(
@@ -246,7 +246,7 @@ if __name__ == "__main__":
         scale_x=0.5,
         scale_y=0.5,
         colors={
-            str(i): [f"water_drop{i}_1", f"water_drop{i}_2", f"water_drop{i}_3"] for i in range(1, 17)
+            str(i): [f"water_drop_1_{i}", f"water_drop_2_{i}", f"water_drop_3_{i}"] for i in range(1, 17)
         }
     )
     # 蝶弹
@@ -256,7 +256,7 @@ if __name__ == "__main__":
         offset={"x": 0, "y": 0},
         scale_x=0.5,
         scale_y=0.5,
-        colors={str(i): f"butterfly{i}" for i in range(1, 17)}
+        colors={str(i): f"butterfly_{i}" for i in range(1, 17)}
     )
     # 中玉
     generator.add_bullet(
@@ -265,7 +265,7 @@ if __name__ == "__main__":
         offset={"x": 0, "y": 0},
         scale_x=0.5,
         scale_y=0.5,
-        colors={str(i): f"ball_big{i}" for i in range(1, 17)}
+        colors={str(i): f"ball_big_{i}" for i in range(1, 17)}
     )
     # 心弹
     generator.add_bullet(
@@ -274,7 +274,7 @@ if __name__ == "__main__":
         offset={"x": 0, "y": 0},
         scale_x=0.5,
         scale_y=0.5,
-        colors={str(i): f"heart{i}" for i in range(1, 17)}
+        colors={str(i): f"heart_{i}" for i in range(1, 17)}
     )
     # 弯刀弹
     generator.add_bullet(
@@ -283,7 +283,7 @@ if __name__ == "__main__":
         offset={"x": 0, "y": 0},
         scale_x=0.5,
         scale_y=0.5,
-        colors={str(i): f"knife_b{i}" for i in range(1, 17)}
+        colors={str(i): f"knife_b_{i}" for i in range(1, 17)}
     )
     # preimg
     generator.add_bullet(
@@ -292,7 +292,7 @@ if __name__ == "__main__":
         offset={"x": 0, "y": 0},
         scale_x=0.5,
         scale_y=0.5,
-        colors={str(i): f"preimg{i}" for i in range(1, 17)}
+        colors={str(i): f"preimg_{i}" for i in range(1, 17)}
     )
     # 大星弹
     generator.add_bullet(
@@ -301,7 +301,7 @@ if __name__ == "__main__":
         offset={"x": 0, "y": 0},
         scale_x=0.5,
         scale_y=0.5,
-        colors={str(i): f"star_big{i}" for i in range(1, 17)}
+        colors={str(i): f"star_big_{i}" for i in range(1, 17)}
     )
     # bubble
     generator.add_bullet(
@@ -310,7 +310,7 @@ if __name__ == "__main__":
         offset={"x": 0, "y": 0},
         scale_x=0.5,
         scale_y=0.5,
-        colors={str(i): f"bubble{i}" for i in range(1, 17)}
+        colors={str(i): f"bubble_{i}" for i in range(1, 17)}
     )
     # 音符弹
     generator.add_bullet(
@@ -320,7 +320,7 @@ if __name__ == "__main__":
         scale_x=0.5,
         scale_y=0.5,
         colors={
-            str(i): [f"music{i}_1", f"music{i}_2", f"music{i}_3"] for i in range(1, 17)
+            str(i): [f"music_1_{i}", f"music_2_{i}", f"music_3_{i}"] for i in range(1, 17)
         }
     )
     # 大玉

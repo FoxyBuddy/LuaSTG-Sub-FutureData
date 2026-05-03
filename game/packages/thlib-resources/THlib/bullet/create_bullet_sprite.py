@@ -1,6 +1,6 @@
 import json
 
-def generate_bullet_json(image_width, image_height, bullet_configs, texture_name="bullet", texture_path="bullet_.png"):
+def generate_bullet_json(image_width, image_height, bullet_configs, texture_name="bullet", texture_path="bullet.png"):
     """
     生成不包含中心点的子弹纹理 JSON
     """
@@ -20,7 +20,8 @@ def generate_bullet_json(image_width, image_height, bullet_configs, texture_name
             y_pos = image_height - (i + 1) * h
             
             sprite_entry = {
-                "name": f"{name_prefix}{i + 1}",
+                "name": str(name_prefix) + "_" + str(i + 1),
+                "type": str(name_prefix),
                 "texture": texture_name,
                 "rect": {
                     "x": current_x,
@@ -68,18 +69,18 @@ bullet_config_list = [
     {"name": "knife","w": 64, "h": 32, "count": 16},
     {"name": "star_small","w": 32, "h": 32, "count": 16},
     {"name": "ellipse","w": 64, "h": 32, "count": 16},
-    {"name": "water_drop1_","w": 96, "h": 64, "count": 16},
-    {"name": "water_drop2_","w": 96, "h": 64, "count": 16},
-    {"name": "water_drop3_","w": 96, "h": 64, "count": 16},
+    {"name": "water_drop_1","w": 96, "h": 64, "count": 16},
+    {"name": "water_drop_2","w": 96, "h": 64, "count": 16},
+    {"name": "water_drop_3","w": 96, "h": 64, "count": 16},
     {"name": "butterfly","w": 64, "h": 64, "count": 16},
     {"name": "ball_big","w": 64, "h": 64, "count": 16},
     {"name": "heart","w": 64, "h": 64, "count": 16},
-    {"name": "kiife_b","w": 64, "h": 64, "count": 16},
+    {"name": "knife_b","w": 64, "h": 64, "count": 16},
     {"name": "preimg","w": 64, "h": 64, "count": 16},
     {"name": "bubble","w": 64, "h": 64, "count": 16},
-    {"name": "music1_","w": 64, "h": 64, "count": 16},
-    {"name": "music2_","w": 64, "h": 64, "count": 16},
-    {"name": "music3_","w": 64, "h": 64, "count": 16},
+    {"name": "music_1","w": 64, "h": 64, "count": 16},
+    {"name": "music_2","w": 64, "h": 64, "count": 16},
+    {"name": "music_3","w": 64, "h": 64, "count": 16},
     {"name": "star_big","w": 96, "h": 96, "count": 16},
     {"name": "ball_huge","w": 128, "h": 128, "count": 16},
     {"name": "ball_light","w": 128, "h": 128, "count": 16},
@@ -90,10 +91,10 @@ bullet_config_list = [
 ]
 
 # 执行计算 (1856x2048)
-json_content = generate_bullet_json(1856, 2048, bullet_config_list)
+json_content = generate_bullet_json(1888, 2048, bullet_config_list)
 
 # 写入文件
-with open("bullets.json", "w", encoding="utf-8") as f:
+with open("bullets_sprites.json", "w", encoding="utf-8") as f:
     json.dump(json_content, f, indent=2, ensure_ascii=False)
 
 print("JSON 脚本生成成功，已去掉中心点字段。")
