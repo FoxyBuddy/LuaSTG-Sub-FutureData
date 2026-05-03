@@ -1,18 +1,22 @@
 --bullet_classes.lua by phsonh 26.5.3
 
-bullet_fog = Class(object)
-function bullet_fog:init(master_bullet,time)
-
-end
 
 bullet = Class(object)
 
-function bullet:init(bullet_style,color_index,destroyable)
-    bullet_fog(self,10)
+function bullet:init(bullet_style,color_index,x,y,v,angle,omega,destroyable)
+    self.img = bullet_style .. "_" .. tostring(color_index)
+    self.x = x
+    self.y = y
+    self.layer = LAYER_ENEMY_BULLET
+    self.group = GROUP_ENEMY_BULLET
+
+    SetV(self, v, angle, true)
+    self.omiga = omega or 0
 end
 
 function bullet:frame()
     task.Do(self)
+    Print(self.colli,self.a)
 end
 
 function bullet:kill()
@@ -21,17 +25,11 @@ function bullet:kill()
     if self._index and BoxCheck(self, w.boundl, w.boundr, w.boundb, w.boundt) then
         New(BulletBreak, self.x, self.y, self._index)
     end
-    if self.imgclass.size == 2.0 then
-        self.imgclass.del(self)
-    end
 end
 
 function bullet:del()
     --	self.imgclass.del(self)
     local w = lstg.world
-    if self.imgclass.size == 2.0 then
-        self.imgclass.del(self)
-    end
     if self._index and BoxCheck(self, w.boundl, w.boundr, w.boundb, w.boundt) then
         New(BulletBreak, self.x, self.y, self._index)
     end

@@ -29,8 +29,12 @@ for i,bullet_sprite in pairs(bullet_sprites.sprites) do
         local coll_info = conf["collision"]
         local a = coll_info.a
         local b = coll_info.b
+        Print(a,b)
         local is_rect = coll_info.is_rect
         local bullet_type = conf["type"]
+        local scale = (conf["scale_x"] + conf["scale_y"])/2
+        local c_x = w / 2 + conf["offset"]["x"]
+        local c_y = h / 2 - conf["offset"]["y"]
         if bullet_type == "ani" then
             --如果是动画类型子弹
             local row_num = conf["row_num"]
@@ -39,11 +43,18 @@ for i,bullet_sprite in pairs(bullet_sprites.sprites) do
             --单张子弹纹理的宽高
             local single_w = w / conf["col_num"]
             local single_h = h / conf["row_num"]
+            --全局缩放和中心偏移
+             --json中纹理中心所采用的的坐标系与标准纹理坐标系的y轴方向相反
             --加载子弹动画
             LoadAnimation(name,tex,x,y,single_w,single_h,col_num,row_num,interval,a,b,is_rect)
+            SetAnimationCenter(name,c_x,c_y)
+            SetAnimationScale(name,scale)
         elseif bullet_type == "static" then
             --如果是静态类型子弹,加载子弹纹理
             LoadImage(name,tex,x,y,w,h,a,b,is_rect)
+            SetImageCenter(name,c_x,c_y)
+            SetImageScale(name,scale)
+            
         end
     else
         --异常处理
