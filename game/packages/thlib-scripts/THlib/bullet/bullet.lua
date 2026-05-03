@@ -1,1 +1,7 @@
-bullet = bullet or {}
+bullet_mgr = bullet_mgr or {}
+bullet_mgr.path = "THlib/bullet/"
+bullet_mgr.files = {"bullet_load.lua","bullet_classes.lua"}
+
+for idx,file in pairs(bullet_mgr.files) do
+    Include(bullet_mgr.path .. file)
+end

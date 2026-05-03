@@ -1,20 +1,16 @@
---bullet_load.lua by phsonh
-
-
-bullet = bullet or {}
-local path = "THlib/bullet/"
-
+--bullet_load.lua by phsonh 26.5.3
+bullet_mgr = bullet_mgr or {}
 --子弹类型表
-bullet.bullet_styles = {}
+bullet_mgr.bullet_styles = {}
 --加载json文件并转成表
-local bullet_sprites = LoadTableFromJson(LoadJson(path .. "bullet_sprites.json"))
-local bullet_defs = LoadTableFromJson(LoadJson(path .. "bullet_defs.json"))
+local bullet_sprites = LoadTableFromJson(LoadJson(bullet_mgr.path .. "bullet_sprites.json"))
+local bullet_defs = LoadTableFromJson(LoadJson(bullet_mgr.path .. "bullet_defs.json"))
 --加载子弹图集
 local bullet_tex_name = bullet_sprites.textures[1].path
-LoadTexture('bullet', path .. bullet_tex_name, true)
+LoadTexture('bullet', bullet_mgr.path .. bullet_tex_name, true)
 --注册子弹类型表
 for bullet_style,defs in pairs(bullet_defs.defs) do
-    table.insert(bullet.bullet_styles,bullet_style)
+    table.insert(bullet_mgr.bullet_styles,bullet_style)
 end
 
 --加载子弹贴图
@@ -57,6 +53,6 @@ end
 
 -- 打印子弹类型表
 Print("Bullet Styles:")
-for i, style_name in ipairs(bullet.bullet_styles) do
+for i, style_name in ipairs(bullet_mgr.bullet_styles) do
     Print(string.format("[%d] %s", i, style_name))
 end
