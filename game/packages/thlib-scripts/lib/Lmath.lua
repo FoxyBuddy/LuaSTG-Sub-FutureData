@@ -91,3 +91,69 @@ else
     -- 2006 年的 WELL512 随机数发生器
     ran = lstg.Rand()
 end
+
+
+
+function lerp_to(unit, struct, lerp_mode, lerp_time, target_value)
+    local start_value = unit[struct]
+    local delta = target_value - start_value
+    local duration = math.floor(lerp_time)
+    local mode = math.floor(lerp_mode)
+
+    if duration <= 0 then
+        unit[struct] = target_value
+        return
+    end
+
+    task.New(unit, function()
+        for t = 1, duration do
+            task.Wait(1)
+            local x = t / duration -- 进度 0.0 -> 1.0
+            local r = x            -- 最终计算的比例
+
+            -- 模式分支判断
+            if mode == 0 then r = x                                   -- linear
+            elseif mode == 1 then r = x^2                             -- easeIn2
+            elseif mode == 2 then r = x^3                             -- easeIn3
+            elseif mode == 3 then r = x^4                             -- easeIn4
+            elseif mode == 4 then r = 1-(1-x)^2                       -- easeOut2
+            elseif mode == 5 then r = 1-(1-x)^3                       -- easeOut3
+            elseif mode == 6 then r = 1-(1-x)^4                       -- easeOut4
+            elseif mode == 8 then r = 3*x^2 - 2*x^3                   -- smoothstep
+            elseif mode >= 9 and mode <= 14 then                      -- Split 系列
+                local is_in_first_half = x < 0.5
+                local s_x = is_in_first_half and (x * 2) or ((x - 0.5) * 2)
+                local s_r = 0
+                
+                -- 根据子模式选择基础曲线
+                local p = (mode == 9 or mode == 12) and 2 or ((mode == 10 or mode == 13) and 3 or 4)
+                
+                if mode <= 11 then -- easeInOut
+                    s_r = is_in_first_half and (s_x^p) or (1 - (1 - s_x)^p)
+                else               -- easeOutIn
+                    s_r = is_in_first_half and (1 - (1 - s_x)^p) or (s_x^p)
+                end
+                r = is_in_first_half and (s_r / 2) or (0.5 + s_r / 2)
+            elseif mode == 15 then r = (x < 1) and 0 or 1             -- delayed
+            elseif mode == 16 then r = 1                              -- instant
+            elseif mode == 18 then r = math.sin(x * math.pi / 2)      -- easeOutSin
+            elseif mode == 19 then r = 1 - math.cos(x * math.pi / 2)  -- easeInSin
+            elseif mode == 20 or mode == 21 then                      -- Sin 复合
+                if x < 0.5 then
+                    local s_x = x * 2
+                    local s_r = (mode == 20) and math.sin(s_x * math.pi / 2) or (1 - math.cos(s_x * math.pi / 2))
+                    r = s_r / 2
+                else
+                    local s_x = (x - 0.5) * 2
+                    local s_r = (mode == 20) and (1 - math.cos(s_x * math.pi / 2)) or math.sin(s_x * math.pi / 2)
+                    r = 0.5 + s_r / 2
+                end
+            end
+
+            -- 应用最终值
+            unit[struct] = start_value + delta * r
+        end
+    end)
+end
+
+--示例:lerp_to(self,"vscale",0,60,3),把自身的vscale缩放在60帧之内以0号插值模式变成3

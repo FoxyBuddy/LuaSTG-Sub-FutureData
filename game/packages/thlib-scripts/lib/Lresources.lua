@@ -83,3 +83,12 @@ end
 function FileExist(filename)
     return lstg.FileManager.FileExist(filename, true)
 end
+
+
+function LoadJson(json_filename)
+    return LoadTextFile(json_filename)
+end
+
+function LoadTableFromJson(json_text)
+    return cjson.decode(json_text)
+end

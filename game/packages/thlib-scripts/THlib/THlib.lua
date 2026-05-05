@@ -3,9 +3,8 @@
 ---Touhou style library
 ---=====================================
 
-----------------------------------------
----加载脚本
 
+THlib = THlib or {}
 Include 'THlib/ex.lua' --ESC的ex库
 Include 'THlib/WalkImageSystem.lua'
 Include 'THlib/DNHWalkImageSystem.lua'
@@ -18,10 +17,7 @@ Include 'THlib/item/item.lua'
 Include 'THlib/player/player.lua'
 Include 'THlib/enemy/enemy.lua'
 Include 'THlib/bullet/bullet.lua'
-Include 'THlib/bullet/bullet_style_loader.lua'
-Include 'THlib/bullet/bullet_others.lua'
-Include 'THlib/bullet/legacy_bullet_styles.lua'
-Include 'THlib/laser/laser.lua'
+--Include 'THlib/laser/laser.lua'
 Include 'THlib/background/background.lua'
 Include 'THlib/ext/ext.lua'
 Include 'THlib/UI/menu.lua'

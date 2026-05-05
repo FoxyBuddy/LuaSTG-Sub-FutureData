@@ -340,7 +340,7 @@ function editor.UserSystemOperation()
     end
 end
 
-_can_be_master = { [_object] = true, [enemy] = true, [boss] = true, [laser] = true, [bullet] = true }--没用上？？
+--_can_be_master = { [_object] = true, [enemy] = true, [boss] = true, [laser] = true, [bullet] = true }--没用上？？
 function _connect(master, servant, dmg_transfer, con_death)
     if IsValid(master) and IsValid(servant) then
         if con_death then
@@ -553,7 +553,7 @@ end
 
 ----------------------------------------
 --激光方法
-
+--[[
 function laser:_TurnOn(t, sound, wait)
     t = t or 30
     t = max(1, int(t))
@@ -587,7 +587,7 @@ function laser:_TurnOff(t, wait)
         task.Wait(t)
     end
 end
-
+]]
 ----------------------------------------
 --声音
 
