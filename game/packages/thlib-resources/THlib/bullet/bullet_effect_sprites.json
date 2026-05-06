@@ -1,0 +1,362 @@
+{
+  "textures": [
+    {
+      "name": "bullet_effect",
+      "path": "bullet_effect.png"
+    }
+  ],
+  "sprites": [
+    {
+      "name": "fog_img_1",
+      "texture": "bullet_effect",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      "scale": 0.5
+    },
+    {
+      "name": "fog_img_2",
+      "texture": "bullet_effect",
+      "rect": {
+        "x": 0,
+        "y": 64,
+        "width": 64,
+        "height": 64
+      },
+      "scale": 0.5
+    },
+    {
+      "name": "fog_img_3",
+      "texture": "bullet_effect",
+      "rect": {
+        "x": 0,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      "scale": 0.5
+    },
+    {
+      "name": "fog_img_4",
+      "texture": "bullet_effect",
+      "rect": {
+        "x": 0,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      "scale": 0.5
+    },
+    {
+      "name": "fog_img_5",
+      "texture": "bullet_effect",
+      "rect": {
+        "x": 0,
+        "y": 256,
+        "width": 64,
+        "height": 64
+      },
+      "scale": 0.5
+    },
+    {
+      "name": "fog_img_6",
+      "texture": "bullet_effect",
+      "rect": {
+        "x": 0,
+        "y": 320,
+        "width": 64,
+        "height": 64
+      },
+      "scale": 0.5
+    },
+    {
+      "name": "fog_img_7",
+      "texture": "bullet_effect",
+      "rect": {
+        "x": 0,
+        "y": 384,
+        "width": 64,
+        "height": 64
+      },
+      "scale": 0.5
+    },
+    {
+      "name": "fog_img_8",
+      "texture": "bullet_effect",
+      "rect": {
+        "x": 0,
+        "y": 448,
+        "width": 64,
+        "height": 64
+      },
+      "scale": 0.5
+    },
+    {
+      "name": "fog_img_9",
+      "texture": "bullet_effect",
+      "rect": {
+        "x": 0,
+        "y": 512,
+        "width": 64,
+        "height": 64
+      },
+      "scale": 0.5
+    },
+    {
+      "name": "fog_img_10",
+      "texture": "bullet_effect",
+      "rect": {
+        "x": 0,
+        "y": 576,
+        "width": 64,
+        "height": 64
+      },
+      "scale": 0.5
+    },
+    {
+      "name": "fog_img_11",
+      "texture": "bullet_effect",
+      "rect": {
+        "x": 0,
+        "y": 640,
+        "width": 64,
+        "height": 64
+      },
+      "scale": 0.5
+    },
+    {
+      "name": "fog_img_12",
+      "texture": "bullet_effect",
+      "rect": {
+        "x": 0,
+        "y": 704,
+        "width": 64,
+        "height": 64
+      },
+      "scale": 0.5
+    },
+    {
+      "name": "fog_img_13",
+      "texture": "bullet_effect",
+      "rect": {
+        "x": 0,
+        "y": 768,
+        "width": 64,
+        "height": 64
+      },
+      "scale": 0.5
+    },
+    {
+      "name": "fog_img_14",
+      "texture": "bullet_effect",
+      "rect": {
+        "x": 0,
+        "y": 832,
+        "width": 64,
+        "height": 64
+      },
+      "scale": 0.5
+    },
+    {
+      "name": "fog_img_15",
+      "texture": "bullet_effect",
+      "rect": {
+        "x": 0,
+        "y": 896,
+        "width": 64,
+        "height": 64
+      },
+      "scale": 0.5
+    },
+    {
+      "name": "fog_img_16",
+      "texture": "bullet_effect",
+      "rect": {
+        "x": 0,
+        "y": 960,
+        "width": 64,
+        "height": 64
+      },
+      "scale": 0.5
+    },
+    {
+      "name": "del_img_1",
+      "texture": "bullet_effect",
+      "rect": {
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      "scale": 0.5
+    },
+    {
+      "name": "del_img_2",
+      "texture": "bullet_effect",
+      "rect": {
+        "x": 64,
+        "y": 64,
+        "width": 64,
+        "height": 64
+      },
+      "scale": 0.5
+    },
+    {
+      "name": "del_img_3",
+      "texture": "bullet_effect",
+      "rect": {
+        "x": 64,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      "scale": 0.5
+    },
+    {
+      "name": "del_img_4",
+      "texture": "bullet_effect",
+      "rect": {
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      "scale": 0.5
+    },
+    {
+      "name": "del_img_5",
+      "texture": "bullet_effect",
+      "rect": {
+        "x": 64,
+        "y": 256,
+        "width": 64,
+        "height": 64
+      },
+      "scale": 0.5
+    },
+    {
+      "name": "del_img_6",
+      "texture": "bullet_effect",
+      "rect": {
+        "x": 64,
+        "y": 320,
+        "width": 64,
+        "height": 64
+      },
+      "scale": 0.5
+    },
+    {
+      "name": "del_img_7",
+      "texture": "bullet_effect",
+      "rect": {
+        "x": 64,
+        "y": 384,
+        "width": 64,
+        "height": 64
+      },
+      "scale": 0.5
+    },
+    {
+      "name": "del_img_8",
+      "texture": "bullet_effect",
+      "rect": {
+        "x": 64,
+        "y": 448,
+        "width": 64,
+        "height": 64
+      },
+      "scale": 0.5
+    },
+    {
+      "name": "del_img_9",
+      "texture": "bullet_effect",
+      "rect": {
+        "x": 64,
+        "y": 512,
+        "width": 64,
+        "height": 64
+      },
+      "scale": 0.5
+    },
+    {
+      "name": "del_img_10",
+      "texture": "bullet_effect",
+      "rect": {
+        "x": 64,
+        "y": 576,
+        "width": 64,
+        "height": 64
+      },
+      "scale": 0.5
+    },
+    {
+      "name": "del_img_11",
+      "texture": "bullet_effect",
+      "rect": {
+        "x": 64,
+        "y": 640,
+        "width": 64,
+        "height": 64
+      },
+      "scale": 0.5
+    },
+    {
+      "name": "del_img_12",
+      "texture": "bullet_effect",
+      "rect": {
+        "x": 64,
+        "y": 704,
+        "width": 64,
+        "height": 64
+      },
+      "scale": 0.5
+    },
+    {
+      "name": "del_img_13",
+      "texture": "bullet_effect",
+      "rect": {
+        "x": 64,
+        "y": 768,
+        "width": 64,
+        "height": 64
+      },
+      "scale": 0.5
+    },
+    {
+      "name": "del_img_14",
+      "texture": "bullet_effect",
+      "rect": {
+        "x": 64,
+        "y": 832,
+        "width": 64,
+        "height": 64
+      },
+      "scale": 0.5
+    },
+    {
+      "name": "del_img_15",
+      "texture": "bullet_effect",
+      "rect": {
+        "x": 64,
+        "y": 896,
+        "width": 64,
+        "height": 64
+      },
+      "scale": 0.5
+    },
+    {
+      "name": "del_img_16",
+      "texture": "bullet_effect",
+      "rect": {
+        "x": 64,
+        "y": 960,
+        "width": 64,
+        "height": 64
+      },
+      "scale": 0.5
+    }
+  ]
+}

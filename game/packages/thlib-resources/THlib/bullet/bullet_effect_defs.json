@@ -1,0 +1,328 @@
+{
+  "defs": {
+    "ball_small": {
+      "time": 8,
+      "alpha": {
+        "start_alpha": 0,
+        "tag_alpha": 255
+      },
+      "scale": {
+        "start_scale": 2,
+        "tag_scale": 0.5
+      },
+      "use_bullet_img": false
+    },
+    "mildew": {
+      "time": 8,
+      "alpha": {
+        "start_alpha": 0,
+        "tag_alpha": 255
+      },
+      "scale": {
+        "start_scale": 2,
+        "tag_scale": 0.5
+      },
+      "use_bullet_img": false
+    },
+    "grain_a": {
+      "time": 8,
+      "alpha": {
+        "start_alpha": 0,
+        "tag_alpha": 255
+      },
+      "scale": {
+        "start_scale": 3,
+        "tag_scale": 0.5
+      },
+      "use_bullet_img": false
+    },
+    "grain_b": {
+      "time": 8,
+      "alpha": {
+        "start_alpha": 0,
+        "tag_alpha": 255
+      },
+      "scale": {
+        "start_scale": 3,
+        "tag_scale": 0.5
+      },
+      "use_bullet_img": false
+    },
+    "grain_c": {
+      "time": 8,
+      "alpha": {
+        "start_alpha": 0,
+        "tag_alpha": 255
+      },
+      "scale": {
+        "start_scale": 3,
+        "tag_scale": 0.5
+      },
+      "use_bullet_img": false
+    },
+    "arrow_small": {
+      "time": 8,
+      "alpha": {
+        "start_alpha": 0,
+        "tag_alpha": 255
+      },
+      "scale": {
+        "start_scale": 3,
+        "tag_scale": 0.5
+      },
+      "use_bullet_img": false
+    },
+    "gun_bullet": {
+      "time": 8,
+      "alpha": {
+        "start_alpha": 0,
+        "tag_alpha": 255
+      },
+      "scale": {
+        "start_scale": 3,
+        "tag_scale": 0.5
+      },
+      "use_bullet_img": false
+    },
+    "silence": {
+      "time": 8,
+      "alpha": {
+        "start_alpha": 0,
+        "tag_alpha": 255
+      },
+      "scale": {
+        "start_scale": 5,
+        "tag_scale": 1
+      },
+      "use_bullet_img": true
+    },
+    "kite": {
+      "time": 8,
+      "alpha": {
+        "start_alpha": 0,
+        "tag_alpha": 255
+      },
+      "scale": {
+        "start_scale": 3,
+        "tag_scale": 0.5
+      },
+      "use_bullet_img": false
+    },
+    "arrow_mid": {
+      "time": 8,
+      "alpha": {
+        "start_alpha": 0,
+        "tag_alpha": 255
+      },
+      "scale": {
+        "start_scale": 5,
+        "tag_scale": 1
+      },
+      "use_bullet_img": false
+    },
+    "money": {
+      "time": 8,
+      "alpha": {
+        "start_alpha": 0,
+        "tag_alpha": 255
+      },
+      "scale": {
+        "start_scale": 3,
+        "tag_scale": 0.5
+      },
+      "use_bullet_img": false
+    },
+    "square": {
+      "time": 8,
+      "alpha": {
+        "start_alpha": 0,
+        "tag_alpha": 255
+      },
+      "scale": {
+        "start_scale": 3,
+        "tag_scale": 0.5
+      },
+      "use_bullet_img": false
+    },
+    "arrow_big": {
+      "time": 8,
+      "alpha": {
+        "start_alpha": 0,
+        "tag_alpha": 255
+      },
+      "scale": {
+        "start_scale": 3,
+        "tag_scale": 0.5
+      },
+      "use_bullet_img": false
+    },
+    "ball_mid": {
+      "time": 8,
+      "alpha": {
+        "start_alpha": 0,
+        "tag_alpha": 255
+      },
+      "scale": {
+        "start_scale": 3,
+        "tag_scale": 0.5
+      },
+      "use_bullet_img": false
+    },
+    "ball_mid_c": {
+      "time": 8,
+      "alpha": {
+        "start_alpha": 0,
+        "tag_alpha": 255
+      },
+      "scale": {
+        "start_scale": 3,
+        "tag_scale": 0.5
+      },
+      "use_bullet_img": false
+    },
+    "knife": {
+      "time": 8,
+      "alpha": {
+        "start_alpha": 0,
+        "tag_alpha": 255
+      },
+      "scale": {
+        "start_scale": 5,
+        "tag_scale": 1
+      },
+      "use_bullet_img": false
+    },
+    "star_small": {
+      "time": 8,
+      "alpha": {
+        "start_alpha": 0,
+        "tag_alpha": 255
+      },
+      "scale": {
+        "start_scale": 3,
+        "tag_scale": 0.5
+      },
+      "use_bullet_img": false
+    },
+    "ellipse": {
+      "time": 8,
+      "alpha": {
+        "start_alpha": 0,
+        "tag_alpha": 255
+      },
+      "scale": {
+        "start_scale": 5,
+        "tag_scale": 1
+      },
+      "use_bullet_img": false
+    },
+    "water_drop": {
+      "time": 8,
+      "alpha": {
+        "start_alpha": 0,
+        "tag_alpha": 255
+      },
+      "scale": {
+        "start_scale": 5,
+        "tag_scale": 1
+      },
+      "use_bullet_img": true
+    },
+    "butterfly": {
+      "time": 8,
+      "alpha": {
+        "start_alpha": 0,
+        "tag_alpha": 255
+      },
+      "scale": {
+        "start_scale": 5,
+        "tag_scale": 1
+      },
+      "use_bullet_img": false
+    },
+    "ball_big": {
+      "time": 8,
+      "alpha": {
+        "start_alpha": 0,
+        "tag_alpha": 255
+      },
+      "scale": {
+        "start_scale": 5,
+        "tag_scale": 1
+      },
+      "use_bullet_img": false
+    },
+    "heart": {
+      "time": 8,
+      "alpha": {
+        "start_alpha": 0,
+        "tag_alpha": 255
+      },
+      "scale": {
+        "start_scale": 5,
+        "tag_scale": 1
+      },
+      "use_bullet_img": false
+    },
+    "knife_b": {
+      "time": 8,
+      "alpha": {
+        "start_alpha": 0,
+        "tag_alpha": 255
+      },
+      "scale": {
+        "start_scale": 5,
+        "tag_scale": 1
+      },
+      "use_bullet_img": false
+    },
+    "music": {
+      "time": 8,
+      "alpha": {
+        "start_alpha": 0,
+        "tag_alpha": 255
+      },
+      "scale": {
+        "start_scale": 5,
+        "tag_scale": 1
+      },
+      "use_bullet_img": true
+    },
+    "star_big": {
+      "time": 8,
+      "alpha": {
+        "start_alpha": 0,
+        "tag_alpha": 255
+      },
+      "scale": {
+        "start_scale": 5,
+        "tag_scale": 1
+      },
+      "use_bullet_img": false
+    },
+    "ball_huge": {
+      "time": 8,
+      "alpha": {
+        "start_alpha": 0,
+        "tag_alpha": 255
+      },
+      "scale": {
+        "start_scale": 2,
+        "tag_scale": 1
+      },
+      "use_bullet_img": true
+    },
+    "ball_light": {
+      "time": 8,
+      "alpha": {
+        "start_alpha": 0,
+        "tag_alpha": 255
+      },
+      "scale": {
+        "start_scale": 2,
+        "tag_scale": 1
+      },
+      "use_bullet_img": true
+    }
+  }
+}

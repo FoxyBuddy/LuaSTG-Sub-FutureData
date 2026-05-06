@@ -49,31 +49,75 @@ class BulletConfigGenerator:
 if __name__ == "__main__":
     generator = BulletConfigGenerator()
     # 添加子弹
+    # 钱弹
+    generator.add_bullet(
+        name="money",
+        collision={"a": 4, "b": 4, "is_rect": False},
+        offset={"x": 0, "y": 0},
+        scale_x=1,
+        scale_y=1,
+        colors={str(i): f"money_{i}" for i in range(1, 4)}
+    )
+
     # 点弹
     generator.add_bullet(
         name="ball_small",
         collision={"a": 2, "b": 2, "is_rect": False},
         offset={"x": 0, "y": 0},
-        scale_x=0.5,
-        scale_y=0.5,
+        scale_x=1,
+        scale_y=1,
         colors={str(i): f"ball_small_{i}" for i in range(1, 17)}
     )
+
     # 黑点弹
     generator.add_bullet(
         name="mildew",
         collision={"a": 2, "b": 2, "is_rect": False},
         offset={"x": 0, "y": 0},
-        scale_x=0.5,
-        scale_y=0.5,
+        scale_x=1,
+        scale_y=1,
         colors={str(i): f"mildew_{i}" for i in range(1, 17)}
     )
+
+    # 小米弹
+    generator.add_bullet(
+        name="grain_small",
+        collision={"a": 2, "b": 2, "is_rect": False},
+        offset={"x": 0, "y": 0},
+        scale_x=1,
+        scale_y=1,
+        colors={str(i): f"grain_small_{i}" for i in range(1, 17)}
+    )
+
+    # 小星弹
+    generator.add_bullet(
+        name="star_small",
+        collision={"a": 3, "b": 3, "is_rect": False},
+        offset={"x": 0, "y": 0},
+        scale_x=0.5,
+        scale_y=0.5,
+        colors={str(i): f"star_small_{i}" for i in range(1, 17)}
+    )
+
+    # 黑米弹
+    generator.add_bullet(
+        name="grain_c",
+        collision={"a": 2.5, "b": 2.5, "is_rect": False},
+        offset={"x": 0, "y": 0},
+        scale_x=1,
+        scale_y=1,
+        colors={str(i): f"grain_c_{i}" for i in range(1, 17)}
+    )
+
+
+
     # 米弹
     generator.add_bullet(
         name="grain_a",
         collision={"a": 2.5, "b": 2.5, "is_rect": False},
         offset={"x": 0, "y": 0},
-        scale_x=0.5,
-        scale_y=0.5,
+        scale_x=1,
+        scale_y=1,
         colors={str(i): f"grain_a_{i}" for i in range(1, 17)}
     )
     # 棱弹
@@ -81,44 +125,28 @@ if __name__ == "__main__":
         name="grain_b",
         collision={"a": 2.5, "b": 2.5, "is_rect": False},
         offset={"x": 0, "y": 0},
-        scale_x=0.5,
-        scale_y=0.5,
+        scale_x=1,
+        scale_y=1,
         colors={str(i): f"ball_mid_{i}" for i in range(1, 17)}
     )
-    # 黑米弹
-    generator.add_bullet(
-        name="grain_c",
-        collision={"a": 2.5, "b": 2.5, "is_rect": False},
-        offset={"x": 0, "y": 0},
-        scale_x=0.5,
-        scale_y=0.5,
-        colors={str(i): f"grain_c_{i}" for i in range(1, 17)}
-    )
+    
     # 苦无弹
     generator.add_bullet(
         name="arrow_small",
         collision={"a": 2.5, "b": 2.5, "is_rect": False},
         offset={"x": 0, "y": 0},
-        scale_x=0.5,
-        scale_y=0.5,
+        scale_x=1,
+        scale_y=1,
         colors={str(i): f"arrow_small_{i}" for i in range(1, 17)}
     )
-    # 钱弹
-    generator.add_bullet(
-        name="money",
-        collision={"a": 4, "b": 4, "is_rect": False},
-        offset={"x": 0, "y": 0},
-        scale_x=0.5,
-        scale_y=0.5,
-        colors={str(i): f"money_{i}" for i in range(1, 9)}
-    )
+    
     # 统弹
     generator.add_bullet(
         name="gun_bullet",
         collision={"a": 2.5, "b": 2.5, "is_rect": False},
         offset={"x": 0, "y": 0},
-        scale_x=0.5,
-        scale_y=0.5,
+        scale_x=1,
+        scale_y=1,
         colors={str(i): f"gun_bullet_{i}" for i in range(1, 17)}
     )
     # 休止符
@@ -126,8 +154,8 @@ if __name__ == "__main__":
         name="silence",
         collision={"a": 4.5, "b": 4.5, "is_rect": False},
         offset={"x": 0, "y": 0},
-        scale_x=0.5,
-        scale_y=0.5,
+        scale_x=1,
+        scale_y=1,
         colors={str(i): f"silence_{i}" for i in range(1, 17)}
     )
     # 滴弹
@@ -135,8 +163,8 @@ if __name__ == "__main__":
         name="kite",
         collision={"a": 2.5, "b": 2.5, "is_rect": False},
         offset={"x": 0, "y": 0},
-        scale_x=0.5,
-        scale_y=0.5,
+        scale_x=1,
+        scale_y=1,
         colors={str(i): f"kite_{i}" for i in range(1, 17)}
     )
     # 箭弹
@@ -144,8 +172,8 @@ if __name__ == "__main__":
         name="arrow_mid",
         collision={"a": 3.5, "b": 3.5, "is_rect": False},
         offset={"x": 0, "y": 0},
-        scale_x=0.5,
-        scale_y=0.5,
+        scale_x=1,
+        scale_y=1,
         colors={str(i): f"arrow_mid_{i}" for i in range(1, 17)}
     )
     # 箭弹
@@ -153,8 +181,8 @@ if __name__ == "__main__":
         name="arrow_mid",
         collision={"a": 3.5, "b": 3.5, "is_rect": False},
         offset={"x": 0, "y": 0},
-        scale_x=0.5,
-        scale_y=0.5,
+        scale_x=1,
+        scale_y=1,
         colors={str(i): f"arrow_mid_{i}" for i in range(1, 17)}
     )
     # 札弹
@@ -162,8 +190,8 @@ if __name__ == "__main__":
         name="square",
         collision={"a": 3, "b": 3, "is_rect": False},
         offset={"x": 0, "y": 0},
-        scale_x=0.5,
-        scale_y=0.5,
+        scale_x=1,
+        scale_y=1,
         colors={str(i): f"square_{i}" for i in range(1, 17)}
     )
     # 鳞弹
@@ -171,8 +199,8 @@ if __name__ == "__main__":
         name="arrow_big",
         collision={"a": 2.5, "b": 2.5, "is_rect": False},
         offset={"x": 0, "y": 0},
-        scale_x=0.5,
-        scale_y=0.5,
+        scale_x=1,
+        scale_y=1,
         colors={str(i): f"arrow_big_{i}" for i in range(1, 17)}
     )
     # 小玉
@@ -211,15 +239,7 @@ if __name__ == "__main__":
         scale_y=0.5,
         colors={str(i): f"knife_{i}" for i in range(1, 17)}
     )
-    # 小星弹
-    generator.add_bullet(
-        name="star_small",
-        collision={"a": 3, "b": 3, "is_rect": False},
-        offset={"x": 0, "y": 0},
-        scale_x=0.5,
-        scale_y=0.5,
-        colors={str(i): f"star_small_{i}" for i in range(1, 17)}
-    )
+    
     # 椭弹
     generator.add_bullet(
         name="ellipse",

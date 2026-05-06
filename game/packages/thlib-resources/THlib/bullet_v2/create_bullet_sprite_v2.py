@@ -64,54 +64,55 @@ def generate_bullet_json(bullet_configs, texture_name="bullet", texture_path="bu
 
 # --- 配置区域 ---
 bullet_config_list = [
-    {"name": "ball_small", "w": 16, "h": 16, "count": 16},#1
-    {"name": "mildew",     "w": 16, "h": 16, "count": 16},#2
-    {"name": "grain_a",    "w": 32, "h": 16, "count": 16},#3
-    {"name": "grain_b",    "w": 32, "h": 16, "count": 16},#4
-    {"name": "grain_c",    "w": 32, "h": 16, "count": 16},#5
-    {"name": "arrow_small","w": 32, "h": 16, "count": 16},#6
+    {"name": "money",          "w": 16, "h": 16, "count": 3},#1
+    {"name": "ball_small",     "w": 16, "h": 16, "count": 16},#2
+    {"name": "mildew",         "w": 16, "h": 16, "count": 16},#3
+    {"name": "grain_small",    "w": 16, "h": 16, "count": 16},#4
+    {"name": "star_small",     "w": 16, "h": 16, "count": 16},#5
+    {"name": "grain_c",        "w": 16, "h": 16, "count": 16},#6
+    {"name": "gun_bullet",     "w": 16, "h": 16, "count": 16},#7
+    {"name": "square",         "w": 16, "h": 16, "count": 16},#8
+    {"name": "grain_b",        "w": 16, "h": 16, "count": 16},#9
+    {"name": "arrow_small",    "w": 16, "h": 16, "count": 16},#10
+    {"name": "grain_a",        "w": 16, "h": 16, "count": 16},#11
+    {"name": "ball_mid",       "w": 16, "h": 16, "count": 16},#12
+    {"name": "ball_mid_c",     "w": 16, "h": 16, "count": 16},#13
+    {"name": "arrow_big",      "w": 16, "h": 16, "count": 16},#14
+    {"name": "laser",          "w": 16, "h": 16, "count": 16},#15
+    {"name": "kite",           "w": 16, "h": 16, "count": 16},#16
 
+    {"name": "preimg",         "w": 32, "h": 32, "count": 8},#17
+    {"name": "ellipse",        "w": 32, "h": 32, "count": 8},#18
+    {"name": "knife_a",        "w": 32, "h": 32, "count": 8},#19
+    {"name": "butterfly",      "w": 32, "h": 32, "count": 8},#20
+    {"name": "ball_big",       "w": 32, "h": 32, "count": 8},#21
+    {"name": "star_big",       "w": 32, "h": 32, "count": 8},#22
+    {"name": "arrow_mid",      "w": 32, "h": 32, "count": 8},#23
+    {"name": "heart",          "w": 32, "h": 32, "count": 8},#24
+    {"name": "tear",           "w": 32, "h": 32, "count": 8},#25
+    {"name": "stone",          "w": 32, "h": 32, "count": 8},#26
+    {"name": "silence",        "w": 32, "h": 32, "count": 8},#27
+    {"name": "orb_small",      "w": 32, "h": 32, "count": 8},#28
 
-    {"name": "gun_bullet", "w": 32, "h": 24, "count": 16},#7
-    {"name": "silence",    "w": 64, "h": 24, "count": 16},#8
-    {"name": "kite",       "w": 32, "h": 24, "count": 16},#9
-    {"name": "arrow_mid",  "w": 64, "h": 24, "count": 16},#10
-    {"name": "money",      "w": 32, "h": 32, "count": 16},#11
-    {"name": "square",     "w": 32, "h": 32, "count": 16},#12
-    {"name": "arrow_big",  "w": 32, "h": 32, "count": 16},#13
-    {"name": "ball_mid",   "w": 32, "h": 32, "count": 16},#14
-    {"name": "ball_mid_c", "w": 32, "h": 32, "count": 16},#15
-    {"name": "knife",      "w": 64, "h": 32, "count": 16},#16
-    {"name": "star_small", "w": 32, "h": 32, "count": 16},#17
-    {"name": "ellipse",    "w": 64, "h": 32, "count": 16},#18
+    {"name": "music",          "w": 96, "h": 32, "count": 4},
+    {"name": "fire_new",       "w": 128, "h": 32, "count": 4},
+    {"name": "fire_old",       "w": 128, "h": 32, "count": 2},
 
-
-    {"name": "water_drop","w": 288, "h": 64, "count": 16},#19
-
-    {"name": "butterfly",  "w": 64, "h": 64, "count": 16},#20
-    {"name": "ball_big",   "w": 64, "h": 64, "count": 16},#21
-    {"name": "heart",      "w": 64, "h": 64, "count": 16},#22
-    {"name": "knife_b",    "w": 64, "h": 64, "count": 16},#23
-
-    #{"name": "preimg",     "w": 64, "h": 64, "count": 16},
-    #{"name": "bubble",     "w": 64, "h": 64, "count": 16},
-
-    {"name": "music",    "w": 192, "h": 64, "count": 16},#24
-    {"name": "star_big",   "w": 96, "h": 96, "count": 16},#25
-    {"name": "ball_huge",  "w": 128, "h": 128, "count": 16},#26
-    {"name": "ball_light", "w": 128, "h": 128, "count": 16},#27
+    {"name": "ball_huge",      "w": 64, "h": 64, "count": 4},
+    {"name": "orb_big",        "w": 64, "h": 64, "count": 4},
+    {"name": "ball_light",     "w": 64, "h": 64, "count": 8},
 ]
 
 # --- 执行 ---
 # 确保你的图片叫 bullet.png 
-target_image = "bullet.png"
+target_image = "bullet_v2.png"
 
 try:
     # 删除了原来的 1184, 512 参数，现在会自动获取
     json_content = generate_bullet_json(bullet_config_list, texture_path=target_image)
 
     # 写入文件
-    with open("bullet_sprites.json", "w", encoding="utf-8") as f:
+    with open("bullet_sprites_v2.json", "w", encoding="utf-8") as f:
         json.dump(json_content, f, indent=2, ensure_ascii=False)
 
     print("JSON 脚本生成成功，已按从上往下（1->N）顺序排列。")

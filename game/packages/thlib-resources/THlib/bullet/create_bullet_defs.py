@@ -4,342 +4,116 @@ class BulletConfigGenerator:
     def __init__(self):
         self.data = {"defs": {}}
 
-    def add_bullet(self, name, type="static", collision=None, offset=None, 
-                   scale_x=1.0, scale_y=1.0, interval=4, colors=None):
+    def _generate_colors(self, name, count):
+        """生成 1 到 count 的颜色映射"""
+        return {str(i): f"{name}_{i}" for i in range(1, count + 1)}
+
+    def add_static(self, name, a=4.0, b=4.0, scale=0.5, count=16, is_rect=False,off_x=0,off_y=0):
         """
-        添加一种子弹定义
-        :param name: 子弹在 JSON 中的键名
-        :param type: "static" 或 "ani"
-        :param collision: 碰撞字典 {"a": float, "b": float, "is_rect": bool}
-        :param offset: 偏移字典 {"x": float, "y": float}
-        :param scale_x: 横向缩放 (默认 1.0)
-        :param scale_y: 纵向缩放 (默认 1.0)
-        :param interval: 动画间隔帧数 (仅在 type="ani" 时出现在 JSON 中)
-        :param colors: 颜色映射数据
+        添加普通静态子弹
+        :param name: 子弹名
+        :param a: 碰撞参数 a
+        :param b: 碰撞参数 b
+        :param scale: 缩放比例
+        :param count: 颜色/纹理数量
+        :param is_rect: 是否为矩形判定
         """
-        bullet_def = {
-            "type": type
+        self.data["defs"][name] = {
+            "type": "static",
+            "collision": {"a": a, "b": b, "is_rect": is_rect},
+            "offset": {"x": off_x, "y": off_y},
+            "scale_x": scale,
+            "scale_y": scale,
+            "colors": self._generate_colors(name, count)
         }
-        
-        # 仅针对动画子弹添加间隔参数
-        if type == "ani":
-            bullet_def["interval"] = interval
 
-        # 填充碰撞、偏移与缩放
-        bullet_def["collision"] = collision or {"a": 4, "b": 4, "is_rect": False}
-        bullet_def["offset"] = offset or {"x": 0, "y": 0}
-        bullet_def["scale_x"] = scale_x
-        bullet_def["scale_y"] = scale_y
-        
-        # 颜色映射
-        bullet_def["colors"] = colors or {}
-        self.data["defs"][name] = bullet_def
+    def add_ani(self, name, row, col, interval=8, a=4.0, b=4.0, scale=0.5, count=16, is_rect=False,off_x=0,off_y=0):
+        """
+        添加动画子弹
+        :param name: 子弹名
+        :param row: 行数
+        :param col: 列数
+        :param interval: 帧间隔
+        """
+        self.data["defs"][name] = {
+            "type": "ani",
+            "collision": {"a": a, "b": b, "is_rect": is_rect},
+            "offset": {"x": off_x, "y": off_y},
+            "scale_x": scale,
+            "scale_y": scale,
+            "interval": interval,
+            "row_num": row,
+            "col_num": col,
+            "colors": self._generate_colors(name, count)
+        }
 
-    def save_to_file(self, filename="bullet_defs.json"):
-        """将当前所有数据保存为指定名称的 JSON 文件"""
-        try:
-            with open(filename, 'w', encoding='utf-8') as f:
-                json.dump(self.data, f, indent=2, ensure_ascii=False)
-            print(f"成功导出: {filename}")
-        except Exception as e:
-            print(f"导出失败: {e}")
-
+    def save(self, filename="bullet_defs.json"):
+        with open(filename, 'w', encoding='utf-8') as f:
+            json.dump(self.data, f, indent=2, ensure_ascii=False)
+        print(f"成功导出: {filename}")
 
 
 if __name__ == "__main__":
-    generator = BulletConfigGenerator()
-    # 添加子弹
-    # 点弹
-    generator.add_bullet(
-        name="ball_small",
-        collision={"a": 2, "b": 2, "is_rect": False},
-        offset={"x": 0, "y": 0},
-        scale_x=0.5,
-        scale_y=0.5,
-        colors={str(i): f"ball_small_{i}" for i in range(1, 17)}
-    )
-    # 黑点弹
-    generator.add_bullet(
-        name="mildew",
-        collision={"a": 2, "b": 2, "is_rect": False},
-        offset={"x": 0, "y": 0},
-        scale_x=0.5,
-        scale_y=0.5,
-        colors={str(i): f"mildew_{i}" for i in range(1, 17)}
-    )
-    # 米弹
-    generator.add_bullet(
-        name="grain_a",
-        collision={"a": 2.5, "b": 2.5, "is_rect": False},
-        offset={"x": 0, "y": 0},
-        scale_x=0.5,
-        scale_y=0.5,
-        colors={str(i): f"grain_a_{i}" for i in range(1, 17)}
-    )
-    # 棱弹
-    generator.add_bullet(
-        name="grain_b",
-        collision={"a": 2.5, "b": 2.5, "is_rect": False},
-        offset={"x": 0, "y": 0},
-        scale_x=0.5,
-        scale_y=0.5,
-        colors={str(i): f"ball_mid_{i}" for i in range(1, 17)}
-    )
-    # 黑米弹
-    generator.add_bullet(
-        name="grain_c",
-        collision={"a": 2.5, "b": 2.5, "is_rect": False},
-        offset={"x": 0, "y": 0},
-        scale_x=0.5,
-        scale_y=0.5,
-        colors={str(i): f"grain_c_{i}" for i in range(1, 17)}
-    )
-    # 苦无弹
-    generator.add_bullet(
-        name="arrow_small",
-        collision={"a": 2.5, "b": 2.5, "is_rect": False},
-        offset={"x": 0, "y": 0},
-        scale_x=0.5,
-        scale_y=0.5,
-        colors={str(i): f"arrow_small_{i}" for i in range(1, 17)}
-    )
-    # 钱弹
-    generator.add_bullet(
-        name="money",
-        collision={"a": 4, "b": 4, "is_rect": False},
-        offset={"x": 0, "y": 0},
-        scale_x=0.5,
-        scale_y=0.5,
-        colors={str(i): f"money_{i}" for i in range(1, 9)}
-    )
-    # 统弹
-    generator.add_bullet(
-        name="gun_bullet",
-        collision={"a": 2.5, "b": 2.5, "is_rect": False},
-        offset={"x": 0, "y": 0},
-        scale_x=0.5,
-        scale_y=0.5,
-        colors={str(i): f"gun_bullet_{i}" for i in range(1, 17)}
-    )
-    # 休止符
-    generator.add_bullet(
-        name="silence",
-        collision={"a": 4.5, "b": 4.5, "is_rect": False},
-        offset={"x": 0, "y": 0},
-        scale_x=0.5,
-        scale_y=0.5,
-        colors={str(i): f"silence_{i}" for i in range(1, 17)}
-    )
-    # 滴弹
-    generator.add_bullet(
-        name="kite",
-        collision={"a": 2.5, "b": 2.5, "is_rect": False},
-        offset={"x": 0, "y": 0},
-        scale_x=0.5,
-        scale_y=0.5,
-        colors={str(i): f"kite_{i}" for i in range(1, 17)}
-    )
-    # 箭弹
-    generator.add_bullet(
-        name="arrow_mid",
-        collision={"a": 3.5, "b": 3.5, "is_rect": False},
-        offset={"x": 0, "y": 0},
-        scale_x=0.5,
-        scale_y=0.5,
-        colors={str(i): f"arrow_mid_{i}" for i in range(1, 17)}
-    )
-    # 箭弹
-    generator.add_bullet(
-        name="arrow_mid",
-        collision={"a": 3.5, "b": 3.5, "is_rect": False},
-        offset={"x": 0, "y": 0},
-        scale_x=0.5,
-        scale_y=0.5,
-        colors={str(i): f"arrow_mid_{i}" for i in range(1, 17)}
-    )
-    # 札弹
-    generator.add_bullet(
-        name="square",
-        collision={"a": 3, "b": 3, "is_rect": False},
-        offset={"x": 0, "y": 0},
-        scale_x=0.5,
-        scale_y=0.5,
-        colors={str(i): f"square_{i}" for i in range(1, 17)}
-    )
-    # 鳞弹
-    generator.add_bullet(
-        name="arrow_big",
-        collision={"a": 2.5, "b": 2.5, "is_rect": False},
-        offset={"x": 0, "y": 0},
-        scale_x=0.5,
-        scale_y=0.5,
-        colors={str(i): f"arrow_big_{i}" for i in range(1, 17)}
-    )
-    # 小玉
-    generator.add_bullet(
-        name="ball_mid",
-        collision={"a": 4, "b": 4, "is_rect": False},
-        offset={"x": 0, "y": 0},
-        scale_x=0.5,
-        scale_y=0.5,
-        colors={str(i): f"ball_mid{i}" for i in range(1, 17)}
-    )
-    # 环玉
-    generator.add_bullet(
-        name="ball_mid_c",
-        collision={"a": 4, "b": 4, "is_rect": False},
-        offset={"x": 0, "y": 0},
-        scale_x=0.5,
-        scale_y=0.5,
-        colors={str(i): f"ball_mid_c_{i}" for i in range(1, 17)}
-    )
-    # 刀弹
-    generator.add_bullet(
-        name="knife",
-        collision={"a": 4, "b": 4, "is_rect": False},
-        offset={"x": 0, "y": 0},
-        scale_x=0.5,
-        scale_y=0.5,
-        colors={str(i): f"knife_{i}" for i in range(1, 17)}
-    )
-    # 刀弹
-    generator.add_bullet(
-        name="knife",
-        collision={"a": 4, "b": 4, "is_rect": False},
-        offset={"x": 0, "y": 0},
-        scale_x=0.5,
-        scale_y=0.5,
-        colors={str(i): f"knife_{i}" for i in range(1, 17)}
-    )
-    # 小星弹
-    generator.add_bullet(
-        name="star_small",
-        collision={"a": 3, "b": 3, "is_rect": False},
-        offset={"x": 0, "y": 0},
-        scale_x=0.5,
-        scale_y=0.5,
-        colors={str(i): f"star_small_{i}" for i in range(1, 17)}
-    )
-    # 椭弹
-    generator.add_bullet(
-        name="ellipse",
-        collision={"a": 3, "b": 3, "is_rect": False},
-        offset={"x": 0, "y": 0},
-        scale_x=0.5,
-        scale_y=0.5,
-        colors={str(i): f"ellipse_{i}" for i in range(1, 17)}
-    )
-    # 椭弹
-    generator.add_bullet(
-        name="ellipse",
-        collision={"a": 3, "b": 3, "is_rect": False},
-        offset={"x": 0, "y": 0},
-        scale_x=0.5,
-        scale_y=0.5,
-        colors={str(i): f"ellipse_{i}" for i in range(1, 17)}
-    )
-    # 火弹
-    generator.add_bullet(
-        name="water_drop",
-        type="ani",
-        interval=6,
-        scale_x=0.5,
-        scale_y=0.5,
-        colors={
-            str(i): [f"water_drop_1_{i}", f"water_drop_2_{i}", f"water_drop_3_{i}"] for i in range(1, 17)
-        }
-    )
-    # 蝶弹
-    generator.add_bullet(
-        name="butterfly",
-        collision={"a": 4, "b": 4, "is_rect": False},
-        offset={"x": 0, "y": 0},
-        scale_x=0.5,
-        scale_y=0.5,
-        colors={str(i): f"butterfly_{i}" for i in range(1, 17)}
-    )
-    # 中玉
-    generator.add_bullet(
-        name="ball_big",
-        collision={"a": 8, "b": 8, "is_rect": False},
-        offset={"x": 0, "y": 0},
-        scale_x=0.5,
-        scale_y=0.5,
-        colors={str(i): f"ball_big_{i}" for i in range(1, 17)}
-    )
-    # 心弹
-    generator.add_bullet(
-        name="heart",
-        collision={"a": 9, "b": 9, "is_rect": False},
-        offset={"x": 0, "y": 0},
-        scale_x=0.5,
-        scale_y=0.5,
-        colors={str(i): f"heart_{i}" for i in range(1, 17)}
-    )
-    # 弯刀弹
-    generator.add_bullet(
-        name="knife_b",
-        collision={"a": 3.5, "b": 3.5, "is_rect": False},
-        offset={"x": 0, "y": 0},
-        scale_x=0.5,
-        scale_y=0.5,
-        colors={str(i): f"knife_b_{i}" for i in range(1, 17)}
-    )
-    # preimg
-    generator.add_bullet(
-        name="preimg",
-        collision={"a": 4, "b": 4, "is_rect": False},
-        offset={"x": 0, "y": 0},
-        scale_x=0.5,
-        scale_y=0.5,
-        colors={str(i): f"preimg_{i}" for i in range(1, 17)}
-    )
-    # 大星弹
-    generator.add_bullet(
-        name="star_big",
-        collision={"a": 5.5, "b": 5.5, "is_rect": False},
-        offset={"x": 0, "y": 0},
-        scale_x=0.5,
-        scale_y=0.5,
-        colors={str(i): f"star_big_{i}" for i in range(1, 17)}
-    )
-    # bubble
-    generator.add_bullet(
-        name="bubble",
-        collision={"a": 4, "b": 4, "is_rect": False},
-        offset={"x": 0, "y": 0},
-        scale_x=0.5,
-        scale_y=0.5,
-        colors={str(i): f"bubble_{i}" for i in range(1, 17)}
-    )
-    # 音符弹
-    generator.add_bullet(
-        name="music",
-        type="ani",
-        interval=6,
-        scale_x=0.5,
-        scale_y=0.5,
-        colors={
-            str(i): [f"music_1_{i}", f"music_2_{i}", f"music_3_{i}"] for i in range(1, 17)
-        }
-    )
-    # 大玉
-    generator.add_bullet(
-        name="ball_huge",
-        collision={"a": 13.5, "b": 13.5, "is_rect": False},
-        offset={"x": 0, "y": 0},
-        scale_x=0.5,
-        scale_y=0.5,
-        colors={str(i): f"ball_huge{i}" for i in range(1, 17)}
-    )
-    # 光玉
-    generator.add_bullet(
-        name="ball_light",
-        collision={"a": 11.5, "b": 11.5, "is_rect": False},
-        offset={"x": 0, "y": 0},
-        scale_x=0.5,
-        scale_y=0.5,
-        colors={str(i): f"ball_light{i}" for i in range(1, 17)}
-    )
-    # 输出到文件
-    generator.save_to_file("bullet_defs.json")
+    gen = BulletConfigGenerator()
+
+    # 1. ball_small
+    gen.add_static("ball_small",  a=2.0,  b=2.0,  scale=0.5, count=16)
+    # 2. mildew
+    gen.add_static("mildew",      a=2.0,  b=2.0,  scale=0.5, count=16)
+    # 3. grain_a
+    gen.add_static("grain_a",     a=2.5,  b=2.5,  scale=0.5, count=16)
+    # 4. grain_b
+    gen.add_static("grain_b",     a=2.5,  b=2.5,  scale=0.5, count=16)
+    # 5. grain_c
+    gen.add_static("grain_c",     a=2.5,  b=2.5,  scale=0.5, count=16)
+    # 6. arrow_small
+    gen.add_static("arrow_small", a=2.5,  b=2.5,  scale=0.5, count=16)
+
+    # 7. gun_bullet
+    gen.add_static("gun_bullet",  a=2.5,  b=2.5,  scale=0.5, count=16)
+    # 8. slience (修正了拼写错误)
+    gen.add_static("silence",     a=4.5,  b=4.5,  scale=0.5, count=16)
+    # 9. kite
+    gen.add_static("kite",        a=2.5,  b=2.5,  scale=0.5, count=16)
+    # 10. arrow_mid
+    gen.add_static("arrow_mid",   a=3.5,  b=3.5,  scale=0.5, count=16,off_x=16,off_y=0)
+    # 11. money
+    gen.add_static("money",       a=4.0,  b=4.0,  scale=0.5, count=16)
+    # 12. square
+    gen.add_static("square",      a=3.0,  b=3.0,  scale=0.5, count=16)
+    # 13. arrow_big
+    gen.add_static("arrow_big",   a=2.5,  b=2.5,  scale=0.5, count=16)
+    # 14. ball_mid
+    gen.add_static("ball_mid",    a=4.0,  b=4.0,  scale=0.5, count=16)
+    # 15. ball_mid_c
+    gen.add_static("ball_mid_c",  a=4.0,  b=4.0,  scale=0.5, count=16)
+    # 16. knife
+    gen.add_static("knife",       a=4.0,  b=4.0,  scale=0.5, count=16)
+    # 17. star_small
+    gen.add_static("star_small",  a=3.0,  b=3.0,  scale=0.5, count=16,off_x=0,off_y=1)
+    # 18. ellipse
+    gen.add_static("ellipse",     a=3.0,  b=3.0,  scale=0.5, count=16)
+
+    # 19. water_drop (动画弹: w=288, h=64, 对应 1x3 帧)
+    gen.add_ani("water_drop",     row=1, col=3, interval=6, a=4.0, b=4.0, scale=0.5, count=16)
+
+    # 20. butterfly
+    gen.add_static("butterfly",   a=4.0,  b=4.0,  scale=0.5, count=16)
+    # 21. ball_big
+    gen.add_static("ball_big",    a=8.0,  b=8.0,  scale=0.5, count=16)
+    # 22. heart
+    gen.add_static("heart",       a=9.0,  b=9.0,  scale=0.5, count=16)
+    # 23. knife_b
+    gen.add_static("knife_b",     a=3.5,  b=3.5,  scale=0.5, count=16)
+
+    # 24. music (动画弹: w=192, h=64, 对应 1x3 帧)
+    gen.add_ani("music",          row=1, col=3, interval=6, a=4.0, b=4.0, scale=0.5, count=16,off_x=16,off_y=0)
+    # 25. star_big
+    gen.add_static("star_big",    a=5.5,  b=5.5,  scale=0.5, count=16,off_x=0,off_y=-1)
+    #gen.add_static("star_big",    a=5.5,  b=5.5,  scale=0.5, count=16,off_x=0,off_y=-0.5)
+    # 26. ball_huge
+    gen.add_static("ball_huge",   a=13.5, b=13.5, scale=0.5, count=16)
+    # 27. ball_light
+    gen.add_static("ball_light",  a=11.5, b=11.5, scale=0.5, count=16)
+
+    gen.save()

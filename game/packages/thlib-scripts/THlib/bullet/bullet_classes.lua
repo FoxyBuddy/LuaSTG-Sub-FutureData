@@ -4,19 +4,26 @@
 bullet = Class(object)
 
 function bullet:init(bullet_style,color_index,x,y,v,angle,omega,destroyable)
+    self.style = bullet_style
     self.img = bullet_style .. "_" .. tostring(color_index)
     self.x = x
     self.y = y
     self.layer = LAYER_ENEMY_BULLET
     self.group = GROUP_ENEMY_BULLET
-
-    SetV(self, v, angle, true)
+    self.hide=false
+    self.bound=true
+    self.navi=true
+    self.colli=true
+	self.a = bullet_mgr.bullet_hitbox[bullet_style].a
+	self.b = bullet_mgr.bullet_hitbox[bullet_style].b
+	self.rect = bullet_mgr.bullet_hitbox[bullet_style].is_rect
     self.omiga = omega or 0
+    self._blend,self._a,self._r,self._g,self._b = "",255,255,255,255
+    SetV(self, v, angle, true)
 end
 
 function bullet:frame()
     task.Do(self)
-    Print(self.colli,self.a)
 end
 
 function bullet:kill()
@@ -28,7 +35,6 @@ function bullet:kill()
 end
 
 function bullet:del()
-    --	self.imgclass.del(self)
     local w = lstg.world
     if self._index and BoxCheck(self, w.boundl, w.boundr, w.boundb, w.boundt) then
         New(BulletBreak, self.x, self.y, self._index)

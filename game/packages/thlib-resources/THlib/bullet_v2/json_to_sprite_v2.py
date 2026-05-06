@@ -36,4 +36,4 @@ def convert_bullet_json(input_file, output_file):
         print(f"处理失败: {e}")
 
 if __name__ == "__main__":
-    convert_bullet_json('fixed_data.json', 'output.json')
+    convert_bullet_json('bullet_sprites_v2.json', 'output.json')

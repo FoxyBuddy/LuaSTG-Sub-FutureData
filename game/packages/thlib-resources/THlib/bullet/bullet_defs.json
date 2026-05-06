@@ -3,8 +3,8 @@
     "ball_small": {
       "type": "static",
       "collision": {
-        "a": 2,
-        "b": 2,
+        "a": 2.0,
+        "b": 2.0,
         "is_rect": false
       },
       "offset": {
@@ -35,8 +35,8 @@
     "mildew": {
       "type": "static",
       "collision": {
-        "a": 2,
-        "b": 2,
+        "a": 2.0,
+        "b": 2.0,
         "is_rect": false
       },
       "offset": {
@@ -110,22 +110,22 @@
       "scale_x": 0.5,
       "scale_y": 0.5,
       "colors": {
-        "1": "ball_mid_1",
-        "2": "ball_mid_2",
-        "3": "ball_mid_3",
-        "4": "ball_mid_4",
-        "5": "ball_mid_5",
-        "6": "ball_mid_6",
-        "7": "ball_mid_7",
-        "8": "ball_mid_8",
-        "9": "ball_mid_9",
-        "10": "ball_mid_10",
-        "11": "ball_mid_11",
-        "12": "ball_mid_12",
-        "13": "ball_mid_13",
-        "14": "ball_mid_14",
-        "15": "ball_mid_15",
-        "16": "ball_mid_16"
+        "1": "grain_b_1",
+        "2": "grain_b_2",
+        "3": "grain_b_3",
+        "4": "grain_b_4",
+        "5": "grain_b_5",
+        "6": "grain_b_6",
+        "7": "grain_b_7",
+        "8": "grain_b_8",
+        "9": "grain_b_9",
+        "10": "grain_b_10",
+        "11": "grain_b_11",
+        "12": "grain_b_12",
+        "13": "grain_b_13",
+        "14": "grain_b_14",
+        "15": "grain_b_15",
+        "16": "grain_b_16"
       }
     },
     "grain_c": {
@@ -190,30 +190,6 @@
         "14": "arrow_small_14",
         "15": "arrow_small_15",
         "16": "arrow_small_16"
-      }
-    },
-    "money": {
-      "type": "static",
-      "collision": {
-        "a": 4,
-        "b": 4,
-        "is_rect": false
-      },
-      "offset": {
-        "x": 0,
-        "y": 0
-      },
-      "scale_x": 0.5,
-      "scale_y": 0.5,
-      "colors": {
-        "1": "money_1",
-        "2": "money_2",
-        "3": "money_3",
-        "4": "money_4",
-        "5": "money_5",
-        "6": "money_6",
-        "7": "money_7",
-        "8": "money_8"
       }
     },
     "gun_bullet": {
@@ -320,7 +296,7 @@
         "is_rect": false
       },
       "offset": {
-        "x": 0,
+        "x": 16,
         "y": 0
       },
       "scale_x": 0.5,
@@ -344,11 +320,43 @@
         "16": "arrow_mid_16"
       }
     },
+    "money": {
+      "type": "static",
+      "collision": {
+        "a": 4.0,
+        "b": 4.0,
+        "is_rect": false
+      },
+      "offset": {
+        "x": 0,
+        "y": 0
+      },
+      "scale_x": 0.5,
+      "scale_y": 0.5,
+      "colors": {
+        "1": "money_1",
+        "2": "money_2",
+        "3": "money_3",
+        "4": "money_4",
+        "5": "money_5",
+        "6": "money_6",
+        "7": "money_7",
+        "8": "money_8",
+        "9": "money_9",
+        "10": "money_10",
+        "11": "money_11",
+        "12": "money_12",
+        "13": "money_13",
+        "14": "money_14",
+        "15": "money_15",
+        "16": "money_16"
+      }
+    },
     "square": {
       "type": "static",
       "collision": {
-        "a": 3,
-        "b": 3,
+        "a": 3.0,
+        "b": 3.0,
         "is_rect": false
       },
       "offset": {
@@ -411,8 +419,8 @@
     "ball_mid": {
       "type": "static",
       "collision": {
-        "a": 4,
-        "b": 4,
+        "a": 4.0,
+        "b": 4.0,
         "is_rect": false
       },
       "offset": {
@@ -422,29 +430,29 @@
       "scale_x": 0.5,
       "scale_y": 0.5,
       "colors": {
-        "1": "ball_mid1",
-        "2": "ball_mid2",
-        "3": "ball_mid3",
-        "4": "ball_mid4",
-        "5": "ball_mid5",
-        "6": "ball_mid6",
-        "7": "ball_mid7",
-        "8": "ball_mid8",
-        "9": "ball_mid9",
-        "10": "ball_mid10",
-        "11": "ball_mid11",
-        "12": "ball_mid12",
-        "13": "ball_mid13",
-        "14": "ball_mid14",
-        "15": "ball_mid15",
-        "16": "ball_mid16"
+        "1": "ball_mid_1",
+        "2": "ball_mid_2",
+        "3": "ball_mid_3",
+        "4": "ball_mid_4",
+        "5": "ball_mid_5",
+        "6": "ball_mid_6",
+        "7": "ball_mid_7",
+        "8": "ball_mid_8",
+        "9": "ball_mid_9",
+        "10": "ball_mid_10",
+        "11": "ball_mid_11",
+        "12": "ball_mid_12",
+        "13": "ball_mid_13",
+        "14": "ball_mid_14",
+        "15": "ball_mid_15",
+        "16": "ball_mid_16"
       }
     },
     "ball_mid_c": {
       "type": "static",
       "collision": {
-        "a": 4,
-        "b": 4,
+        "a": 4.0,
+        "b": 4.0,
         "is_rect": false
       },
       "offset": {
@@ -475,8 +483,8 @@
     "knife": {
       "type": "static",
       "collision": {
-        "a": 4,
-        "b": 4,
+        "a": 4.0,
+        "b": 4.0,
         "is_rect": false
       },
       "offset": {
@@ -507,13 +515,13 @@
     "star_small": {
       "type": "static",
       "collision": {
-        "a": 3,
-        "b": 3,
+        "a": 3.0,
+        "b": 3.0,
         "is_rect": false
       },
       "offset": {
         "x": 0,
-        "y": 0
+        "y": 1
       },
       "scale_x": 0.5,
       "scale_y": 0.5,
@@ -539,8 +547,8 @@
     "ellipse": {
       "type": "static",
       "collision": {
-        "a": 3,
-        "b": 3,
+        "a": 3.0,
+        "b": 3.0,
         "is_rect": false
       },
       "offset": {
@@ -570,12 +578,9 @@
     },
     "water_drop": {
       "type": "ani",
-      "interval": 6,
-      "row_num":1,
-      "col_num":3,
       "collision": {
-        "a": 4,
-        "b": 4,
+        "a": 4.0,
+        "b": 4.0,
         "is_rect": false
       },
       "offset": {
@@ -584,6 +589,9 @@
       },
       "scale_x": 0.5,
       "scale_y": 0.5,
+      "interval": 6,
+      "row_num": 1,
+      "col_num": 3,
       "colors": {
         "1": "water_drop_1",
         "2": "water_drop_2",
@@ -606,8 +614,8 @@
     "butterfly": {
       "type": "static",
       "collision": {
-        "a": 4,
-        "b": 4,
+        "a": 4.0,
+        "b": 4.0,
         "is_rect": false
       },
       "offset": {
@@ -638,8 +646,8 @@
     "ball_big": {
       "type": "static",
       "collision": {
-        "a": 8,
-        "b": 8,
+        "a": 8.0,
+        "b": 8.0,
         "is_rect": false
       },
       "offset": {
@@ -670,8 +678,8 @@
     "heart": {
       "type": "static",
       "collision": {
-        "a": 9,
-        "b": 9,
+        "a": 9.0,
+        "b": 9.0,
         "is_rect": false
       },
       "offset": {
@@ -731,36 +739,39 @@
         "16": "knife_b_16"
       }
     },
-    "preimg": {
-      "type": "static",
+    "music": {
+      "type": "ani",
       "collision": {
-        "a": 4,
-        "b": 4,
+        "a": 4.0,
+        "b": 4.0,
         "is_rect": false
       },
       "offset": {
-        "x": 0,
+        "x": 16,
         "y": 0
       },
       "scale_x": 0.5,
       "scale_y": 0.5,
+      "interval": 6,
+      "row_num": 1,
+      "col_num": 3,
       "colors": {
-        "1": "preimg_1",
-        "2": "preimg_2",
-        "3": "preimg_3",
-        "4": "preimg_4",
-        "5": "preimg_5",
-        "6": "preimg_6",
-        "7": "preimg_7",
-        "8": "preimg_8",
-        "9": "preimg_9",
-        "10": "preimg_10",
-        "11": "preimg_11",
-        "12": "preimg_12",
-        "13": "preimg_13",
-        "14": "preimg_14",
-        "15": "preimg_15",
-        "16": "preimg_16"
+        "1": "music_1",
+        "2": "music_2",
+        "3": "music_3",
+        "4": "music_4",
+        "5": "music_5",
+        "6": "music_6",
+        "7": "music_7",
+        "8": "music_8",
+        "9": "music_9",
+        "10": "music_10",
+        "11": "music_11",
+        "12": "music_12",
+        "13": "music_13",
+        "14": "music_14",
+        "15": "music_15",
+        "16": "music_16"
       }
     },
     "star_big": {
@@ -772,7 +783,7 @@
       },
       "offset": {
         "x": 0,
-        "y": 0
+        "y": -1
       },
       "scale_x": 0.5,
       "scale_y": 0.5,
@@ -795,73 +806,6 @@
         "16": "star_big_16"
       }
     },
-    "bubble": {
-      "type": "static",
-      "collision": {
-        "a": 4,
-        "b": 4,
-        "is_rect": false
-      },
-      "offset": {
-        "x": 0,
-        "y": 0
-      },
-      "scale_x": 0.5,
-      "scale_y": 0.5,
-      "colors": {
-        "1": "bubble_1",
-        "2": "bubble_2",
-        "3": "bubble_3",
-        "4": "bubble_4",
-        "5": "bubble_5",
-        "6": "bubble_6",
-        "7": "bubble_7",
-        "8": "bubble_8",
-        "9": "bubble_9",
-        "10": "bubble_10",
-        "11": "bubble_11",
-        "12": "bubble_12",
-        "13": "bubble_13",
-        "14": "bubble_14",
-        "15": "bubble_15",
-        "16": "bubble_16"
-      }
-    },
-    "music": {
-      "type": "ani",
-      "interval": 6,
-      "row_num":1,
-      "col_num":3,
-      "collision": {
-        "a": 4,
-        "b": 4,
-        "is_rect": false
-      },
-      "offset": {
-        "x": 0,
-        "y": 0
-      },
-      "scale_x": 0.5,
-      "scale_y": 0.5,
-      "colors": {
-        "1": "music_1",
-        "2": "music_2",
-        "3": "music_3",
-        "4": "music_4",
-        "5": "music_5",
-        "6": "music_6",
-        "7": "music_7",
-        "8": "music_8",
-        "9": "music_9",
-        "10": "music_10",
-        "11": "music_11",
-        "12": "music_12",
-        "13": "music_13",
-        "14": "music_14",
-        "15": "music_15",
-        "16": "music_16"
-      }
-    },
     "ball_huge": {
       "type": "static",
       "collision": {
@@ -876,22 +820,22 @@
       "scale_x": 0.5,
       "scale_y": 0.5,
       "colors": {
-        "1": "ball_huge1",
-        "2": "ball_huge2",
-        "3": "ball_huge3",
-        "4": "ball_huge4",
-        "5": "ball_huge5",
-        "6": "ball_huge6",
-        "7": "ball_huge7",
-        "8": "ball_huge8",
-        "9": "ball_huge9",
-        "10": "ball_huge10",
-        "11": "ball_huge11",
-        "12": "ball_huge12",
-        "13": "ball_huge13",
-        "14": "ball_huge14",
-        "15": "ball_huge15",
-        "16": "ball_huge16"
+        "1": "ball_huge_1",
+        "2": "ball_huge_2",
+        "3": "ball_huge_3",
+        "4": "ball_huge_4",
+        "5": "ball_huge_5",
+        "6": "ball_huge_6",
+        "7": "ball_huge_7",
+        "8": "ball_huge_8",
+        "9": "ball_huge_9",
+        "10": "ball_huge_10",
+        "11": "ball_huge_11",
+        "12": "ball_huge_12",
+        "13": "ball_huge_13",
+        "14": "ball_huge_14",
+        "15": "ball_huge_15",
+        "16": "ball_huge_16"
       }
     },
     "ball_light": {
@@ -908,22 +852,22 @@
       "scale_x": 0.5,
       "scale_y": 0.5,
       "colors": {
-        "1": "ball_light1",
-        "2": "ball_light2",
-        "3": "ball_light3",
-        "4": "ball_light4",
-        "5": "ball_light5",
-        "6": "ball_light6",
-        "7": "ball_light7",
-        "8": "ball_light8",
-        "9": "ball_light9",
-        "10": "ball_light10",
-        "11": "ball_light11",
-        "12": "ball_light12",
-        "13": "ball_light13",
-        "14": "ball_light14",
-        "15": "ball_light15",
-        "16": "ball_light16"
+        "1": "ball_light_1",
+        "2": "ball_light_2",
+        "3": "ball_light_3",
+        "4": "ball_light_4",
+        "5": "ball_light_5",
+        "6": "ball_light_6",
+        "7": "ball_light_7",
+        "8": "ball_light_8",
+        "9": "ball_light_9",
+        "10": "ball_light_10",
+        "11": "ball_light_11",
+        "12": "ball_light_12",
+        "13": "ball_light_13",
+        "14": "ball_light_14",
+        "15": "ball_light_15",
+        "16": "ball_light_16"
       }
     }
   }
