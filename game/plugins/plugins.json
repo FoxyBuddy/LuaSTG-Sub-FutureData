@@ -1,20 +1,20 @@
 [
     {
-        "name": "ColliderShapeDebugger",
-        "directory_mode": true,
         "enable": true,
+        "directory_mode": true,
+        "name": "ColliderShapeDebugger",
         "path": "plugins\/ColliderShapeDebugger\/"
     },
     {
-        "name": "PlayerExtensions",
-        "directory_mode": true,
         "enable": true,
+        "directory_mode": true,
+        "name": "PlayerExtensions",
         "path": "plugins\/PlayerExtensions\/"
     },
     {
-        "name": "StageBackgroundExtensions",
-        "directory_mode": true,
         "enable": true,
+        "directory_mode": true,
+        "name": "StageBackgroundExtensions",
         "path": "plugins\/StageBackgroundExtensions\/"
     }
 ]
